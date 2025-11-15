@@ -1535,6 +1535,7 @@ background: radial-gradient(white, #8a1344);
             padding-inline: 2%;
         padding-block: 1%;
       margin-top: 15px;
+      background: red;
   }
 
   .categories {
