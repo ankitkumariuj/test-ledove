@@ -1,0 +1,3667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="theme-color" content="#ffff">
+    <title>Ledove - Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- ========= ye header css sb me comman hoga navbar ke liye ========= -->
+    <link rel="stylesheet" href="../assets/css/header.css" />
+
+    <link rel="stylesheet" href="../assets/css/home.css" />
+    <link rel="stylesheet" href="../assets/css/h_quick_view.css" />
+    <link rel="stylesheet" href="../assets/css/k_style.css" />
+    <link rel="stylesheet" href="../assets/css/bd-cart-drawer.css" />
+    <link rel="stylesheet" href="../assets/css/rating-popup.css" />
+    <link rel="stylesheet" href="../assets/css/checkout.css">
+    <link rel="stylesheet" href="../assets/css/category.css">
+    <!-- ========= ye supportandfooter css sb me comman hoga footer part ke liye ========= -->
+    <link rel="stylesheet" href="../assets/css/supportandfooter.css" />
+    <link rel="stylesheet" href="../assets/css/mobileFooter.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/logo.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+ 
+
+    <div class="wrapper-overlay"></div>
+   <div class="loader">
+      <img src="../assets/images/logo.png" class="loader-logo" />
+      <p>Fetching the latest trends...</p>
+    </div>
+    <!-- ========= header part start here ============== -->
+
+    <div class="top-header">Free Delivery on Orders above ₹500!</div>
+
+    <div class="header">
+      <div class="hamberger-menu-icon">
+       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h480v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        
+      </div>
+      <div class="logo" >
+        <a href="home.html">
+          <img src="../assets/images/logo.png" alt="Logo" />
+        </a>
+    
+      </div>
+      <div class="menu">
+        <a href="home.html" class="menu-item">Home</a>
+        <a href="category.html" class="menu-item">Shop</a>
+        <div class="menu-item">
+          Shirts<i class="fa-solid fa-chevron-down"></i>
+          <div class="dropdown">
+            <div class="menu-item-dropdown">
+              <div>Casuals</div>
+              <div>Printed</div>
+              <div>Formal</div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          T-Shirts <i class="fa-solid fa-chevron-down"></i>
+          <div class="dropdown">
+            <div class="menu-item-dropdown">
+              <div>Graphic</div>
+              <div>Plain</div>
+              <div>Collar</div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">Oversized T-SHIRTS</div>
+        <div class="menu-item">POLO T-Shirts</div>
+      </div>
+      <div class="icons m-hide">
+        <div class="icon-btn hint--box" onclick="openModal()">
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <div
+          class="hint--box-content profile--hint-box-content"
+          area-label="Login"
+        ></div>
+        <div class="icon-btn hint--box" onclick="openSearch()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="hint--box-content" area-label="Search"></div>
+        <div class="icon-btn hint--box" onclick="location='wishlist.html'">
+          <i class="fa-regular fa-heart"></i>
+          <span class="icon-badge wishlist-icon-badge">0</span>
+        </div>
+        <div class="hint--box-content" area-label="Wishlist"></div>
+        <div class="icon-btn hint--box openCart" onclick="openCart()">
+       <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5285 6C16.5098 5.9193 16.4904 5.83842 16.4701 5.75746C16.2061 4.70138 15.7904 3.55383 15.1125 2.65C14.4135 1.71802 13.3929 1 12 1C10.6071 1 9.58648 1.71802 8.88749 2.65C8.20962 3.55383 7.79387 4.70138 7.52985 5.75747C7.50961 5.83842 7.49016 5.9193 7.47145 6H5.8711C4.29171 6 2.98281 7.22455 2.87775 8.80044L2.14441 19.8004C2.02898 21.532 3.40238 23 5.13777 23H18.8622C20.5976 23 21.971 21.532 21.8556 19.8004L21.1222 8.80044C21.0172 7.22455 19.7083 6 18.1289 6H16.5285ZM8 11C8.57298 11 8.99806 10.5684 9.00001 9.99817C9.00016 9.97438 9.00044 9.9506 9.00084 9.92682C9.00172 9.87413 9.00351 9.79455 9.00718 9.69194C9.01451 9.48652 9.0293 9.18999 9.05905 8.83304C9.08015 8.57976 9.10858 8.29862 9.14674 8H14.8533C14.8914 8.29862 14.9198 8.57976 14.941 8.83305C14.9707 9.18999 14.9855 9.48652 14.9928 9.69194C14.9965 9.79455 14.9983 9.87413 14.9992 9.92682C14.9996 9.95134 14.9999 9.97587 15 10.0004C15 10.0004 15 11 16 11C17 11 17 9.99866 17 9.99866C16.9999 9.9636 16.9995 9.92854 16.9989 9.89349C16.9978 9.829 16.9957 9.7367 16.9915 9.62056C16.9833 9.38848 16.9668 9.06001 16.934 8.66695C16.917 8.46202 16.8953 8.23812 16.8679 8H18.1289C18.6554 8 19.0917 8.40818 19.1267 8.93348L19.86 19.9335C19.8985 20.5107 19.4407 21 18.8622 21H5.13777C4.55931 21 4.10151 20.5107 4.13998 19.9335L4.87332 8.93348C4.90834 8.40818 5.34464 8 5.8711 8H7.13208C7.10465 8.23812 7.08303 8.46202 7.06595 8.66696C7.0332 9.06001 7.01674 9.38848 7.00845 9.62056C7.0043 9.7367 7.00219 9.829 7.00112 9.89349C7.00054 9.92785 7.00011 9.96221 7 9.99658C6.99924 10.5672 7.42833 11 8 11ZM9.53352 6H14.4665C14.2353 5.15322 13.921 4.39466 13.5125 3.85C13.0865 3.28198 12.6071 3 12 3C11.3929 3 10.9135 3.28198 10.4875 3.85C10.079 4.39466 9.76472 5.15322 9.53352 6Z" fill="#0F0F0F"></path> 
+        </g>
+      </svg>
+      <span class="bd-icon-badge">0</span>
+        </div>
+        <div class="hint--box-content" area-label="Cart"></div>
+      </div>
+      <div class="icons m-show"> 
+        <a href="/pages/wishlist.html">
+        <div class="svg_text" style="position: relative; background-color: #80808021;
+    padding: 7px;
+    border-radius: 24px;">
+           <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg" 
+            >
+              <path
+                d="M18.8906 3.4C18.1615 2.775 17.3151 2.38438 16.3516 2.22813C15.388 2.07188 14.4245 2.15 13.4609 2.4625C12.5234 2.775 11.7031 3.28281 11 3.98594C10.2969 3.28281 9.46354 2.775 8.5 2.4625C7.5625 2.15 6.61198 2.07188 5.64844 2.22813C4.6849 2.38438 3.83854 2.775 3.10938 3.4C2.17188 4.20729 1.54688 5.17083 1.23438 6.29063C0.921875 7.30625 0.908854 8.34792 1.19531 9.41563C1.48177 10.4573 1.97656 11.3427 2.67969 12.0719L9.51562 19.025C9.93229 19.4417 10.4271 19.65 11 19.65C11.5729 19.65 12.0677 19.4417 12.4844 19.025L19.3203 12.0719C20.0234 11.3427 20.5182 10.4573 20.8047 9.41563C21.0911 8.34792 21.0911 7.30625 20.8047 6.29063C20.4661 5.17083 19.8281 4.20729 18.8906 3.4ZM17.9922 10.7438L11.1172 17.6969C11.0391 17.801 10.9609 17.801 10.8828 17.6969L4.00781 10.7438C3.53906 10.249 3.20052 9.65 2.99219 8.94688C2.8099 8.21771 2.82292 7.50156 3.03125 6.79844C3.23958 6.04323 3.66927 5.39219 4.32031 4.84531C5.07552 4.22031 5.96094 3.94688 6.97656 4.025C8.01823 4.10313 8.90365 4.51979 9.63281 5.275L11 6.64219L12.3672 5.275C13.0964 4.51979 13.9688 4.10313 14.9844 4.025C16.026 3.94688 16.9245 4.22031 17.6797 4.84531C18.3307 5.39219 18.7604 6.04323 18.9688 6.79844C19.1771 7.50156 19.1771 8.21771 18.9688 8.94688C18.7865 9.65 18.4609 10.249 17.9922 10.7438Z"
+                fill="black"
+              ></path>
+            </svg></a>
+
+             <span class="icon-badge wishlist-icon-badge" data-count="0">  0 </span>
+          </div>
+         
+
+        <div class="bd-icon-btn" onclick="openCart()" style="background-color: #80808021;
+    padding: 7px;
+    border-radius: 24px;">
+          <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5285 6C16.5098 5.9193 16.4904 5.83842 16.4701 5.75746C16.2061 4.70138 15.7904 3.55383 15.1125 2.65C14.4135 1.71802 13.3929 1 12 1C10.6071 1 9.58648 1.71802 8.88749 2.65C8.20962 3.55383 7.79387 4.70138 7.52985 5.75747C7.50961 5.83842 7.49016 5.9193 7.47145 6H5.8711C4.29171 6 2.98281 7.22455 2.87775 8.80044L2.14441 19.8004C2.02898 21.532 3.40238 23 5.13777 23H18.8622C20.5976 23 21.971 21.532 21.8556 19.8004L21.1222 8.80044C21.0172 7.22455 19.7083 6 18.1289 6H16.5285ZM8 11C8.57298 11 8.99806 10.5684 9.00001 9.99817C9.00016 9.97438 9.00044 9.9506 9.00084 9.92682C9.00172 9.87413 9.00351 9.79455 9.00718 9.69194C9.01451 9.48652 9.0293 9.18999 9.05905 8.83304C9.08015 8.57976 9.10858 8.29862 9.14674 8H14.8533C14.8914 8.29862 14.9198 8.57976 14.941 8.83305C14.9707 9.18999 14.9855 9.48652 14.9928 9.69194C14.9965 9.79455 14.9983 9.87413 14.9992 9.92682C14.9996 9.95134 14.9999 9.97587 15 10.0004C15 10.0004 15 11 16 11C17 11 17 9.99866 17 9.99866C16.9999 9.9636 16.9995 9.92854 16.9989 9.89349C16.9978 9.829 16.9957 9.7367 16.9915 9.62056C16.9833 9.38848 16.9668 9.06001 16.934 8.66695C16.917 8.46202 16.8953 8.23812 16.8679 8H18.1289C18.6554 8 19.0917 8.40818 19.1267 8.93348L19.86 19.9335C19.8985 20.5107 19.4407 21 18.8622 21H5.13777C4.55931 21 4.10151 20.5107 4.13998 19.9335L4.87332 8.93348C4.90834 8.40818 5.34464 8 5.8711 8H7.13208C7.10465 8.23812 7.08303 8.46202 7.06595 8.66696C7.0332 9.06001 7.01674 9.38848 7.00845 9.62056C7.0043 9.7367 7.00219 9.829 7.00112 9.89349C7.00054 9.92785 7.00011 9.96221 7 9.99658C6.99924 10.5672 7.42833 11 8 11ZM9.53352 6H14.4665C14.2353 5.15322 13.921 4.39466 13.5125 3.85C13.0865 3.28198 12.6071 3 12 3C11.3929 3 10.9135 3.28198 10.4875 3.85C10.079 4.39466 9.76472 5.15322 9.53352 6Z" fill="#0F0F0F"></path> 
+        </g>
+      </svg>
+          <span class="bd-icon-badge">0</span>
+        </div>
+      </div>
+      </div>
+
+<div class="search_bar_contain active">
+  <div class="search_bar">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="#686B77" class="search-bar-icon"><g fill="none" fill-rule="evenodd"><path fill="#686B77" d="M3.438 9.754a6.415 6.415 0 016.408-6.409 6.415 6.415 0 016.409 6.409 6.416 6.416 0 01-6.409 6.408 6.416 6.416 0 01-6.408-6.408M21.816 20.87l-5.974-6.02a7.839 7.839 0 001.88-5.097c0-4.343-3.534-7.875-7.876-7.875-4.342 0-7.875 3.532-7.875 7.875 0 4.342 3.533 7.875 7.875 7.875a7.837 7.837 0 004.946-1.753l5.983 6.029a.73.73 0 001.037.004.733.733 0 00.004-1.038"></path><path d="M0 0h24v24H0z" opacity="0.05"></path></g></svg>
+<div class="text-container">
+  <a href="/pages/search.html">
+  <input
+                type="text"
+                class="search-input"
+                 id="animated-placeholder" placeholder="Search for products, brands..."
+              />
+              </a>
+</div>
+    <div id="search-results"></div>
+              <div class="search-popups" id="search-popups">
+              <ul id="search-results-lists"></ul>
+              </div>
+  </div>
+
+
+  
+</div>
+<div id="manageAddressBtn">
+<div class="delivery_headers" onclick="modalshow()">
+    <div class="icon" >
+<svg viewBox="0 0 1024 1024"  class="icon" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#000000" d="M800 416a288 288 0 10-576 0c0 118.144 94.528 272.128 288 456.576C705.472 688.128 800 534.144 800 416zM512 960C277.312 746.688 160 565.312 160 416a352 352 0 01704 0c0 149.312-117.312 330.688-352 544z"></path><path fill="#000000" d="M512 448a64 64 0 100-128 64 64 0 000 128zm0 64a128 128 0 110-256 128 128 0 010 256zm345.6 192L960 960H672v-64H352v64H64l102.4-256h691.2zm-68.928 0H235.328l-76.8 192h706.944l-76.8-192z"></path></g></svg>     <p id="userloaction"> Delivery to : Set Location</p>  
+    </div>
+    <svg  viewBox="0 0 24 24" width="40px" height="20px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"></path> </g></svg>
+  </div>
+  </div>
+
+ 
+    
+
+
+
+    <!-- ==> k_sidebar <== -->
+
+    <div class="menu-sidebar-container">
+      <div class="close-menu-sidebar">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="menu-sidebar-content">
+        <div class="sidebar-top-content">
+          <ul class="sidebar-ul">
+            <li>
+              <a href="home.html"> Home </a>
+            </li>
+            <li>
+              <a href="category.html"> Shop </a>
+            </li>
+            <li>
+              <div class="dropdown-pli">
+                <a href="category.html">Shirts</a>
+                <div class="sd-dropdown-icon">
+                  <i class="fa-sharp fa-solid fa-caret-down"></i>
+                </div>
+              </div>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="category.html"> Printed </a>
+                </li>
+                <li>
+                  <a href="category.html"> Casuals </a>
+                </li>
+                <li>
+                  <a href="category.html"> Formal </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="dropdown-pli">
+                <a href="category.html">T-Shirts</a>
+                <div class="sd-dropdown-icon">
+                  <i class="fa-sharp fa-solid fa-caret-down"></i>
+                </div>
+              </div>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="category.html"> Plain </a>
+                </li>
+                <li>
+                  <a href="category.html"> Graphic </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="category.html"> Oversized T-SHIRTS </a>
+            </li>
+            <li>
+              <a href="category.html"> POLO T-Shirts </a>
+            </li>
+          </ul>
+        </div>
+        <!--<div class="sidebar-bottom-content">-->
+        <!--  <div class="mobile-menu-my-account">-->
+        <!--    <i class="fa-regular fa-user"></i>-->
+        <!--    <h3>My Account</h3>-->
+        <!--  </div>-->
+        <!--  <div class="m-btn-content">-->
+        <!--    <div class="m-btn m-login-btn">-->
+        <!--      <a> Log in </a>-->
+        <!--    </div>-->
+        <!--    <div class="m-btn m-register-btn">-->
+        <!--      <a> Register </a>-->
+        <!--    </div>-->
+        <!--  </div>-->
+        <!--  <div class="m-sd-footer-content">-->
+        <!--    <a href="wishlist.html" class="m-sd-wishlist-content">-->
+        <!--      <div class="m-heart-icon">-->
+        <!--        <i class="fa-regular fa-heart"></i>-->
+        <!--      </div>-->
+        <!--      <h3>My Wishlist (0)</h3>-->
+        <!--    </a>-->
+        <!--    <div class="k-sd-social-link-content">-->
+        <!--      <a-->
+        <!--        class="social-link"-->
+        <!--        aria-label="Twitter"-->
+        <!--        href="https://twitter.com"-->
+        <!--        target="_blank"-->
+        <!--        rel="nofollow"-->
+        <!--      >-->
+        <!--        <i-->
+        <!--          class="social-icon fab fa-twitter"-->
+        <!--          aria-hidden="true"-->
+        <!--          focusable="false"-->
+        <!--          role="presentation"-->
+        <!--        ></i>-->
+        <!--      </a>-->
+        <!--      <a-->
+        <!--        class="social-link"-->
+        <!--        aria-label="Facebook"-->
+        <!--        href="https://facebook.com"-->
+        <!--        target="_blank"-->
+        <!--        rel="nofollow"-->
+        <!--      >-->
+        <!--        <i-->
+        <!--          class="social-icon fab fa-facebook"-->
+        <!--          aria-hidden="true"-->
+        <!--          focusable="false"-->
+        <!--          role="presentation"-->
+        <!--        ></i>-->
+        <!--      </a>-->
+        <!--      <a-->
+        <!--        class="social-link"-->
+        <!--        aria-label="Instagram"-->
+        <!--        href="https://instagram.com"-->
+        <!--        target="_blank"-->
+        <!--        rel="nofollow"-->
+        <!--      >-->
+        <!--        <i-->
+        <!--          class="social-icon fab fa-instagram"-->
+        <!--          aria-hidden="true"-->
+        <!--          focusable="false"-->
+        <!--          role="presentation"-->
+        <!--        ></i>-->
+        <!--      </a>-->
+        <!--      <a-->
+        <!--        class="social-link"-->
+        <!--        aria-label="Linkedin"-->
+        <!--        href="https://linkedin.com"-->
+        <!--        target="_blank"-->
+        <!--        rel="nofollow"-->
+        <!--      >-->
+        <!--        <i-->
+        <!--          class="social-icon fab fa-linkedin"-->
+        <!--          aria-hidden="true"-->
+        <!--          focusable="false"-->
+        <!--          role="presentation"-->
+        <!--        ></i>-->
+        <!--      </a>-->
+        <!--    </div>-->
+        <!--  </div>-->
+        <!--</div>-->
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <!-- iska js ka code script.js -->
+
+    <!--<div class="modal-overlay" id="loginModal">-->
+    <!--  <div class="close-login-modal-wrapper" onclick="closeModal()"></div>-->
+    <!--  <div class="modal">-->
+    <!--    <div class="login-modal-close-btn k_flex" onclick="closeModal()">-->
+    <!--      &times;-->
+    <!--    </div>-->
+    <!--    <div class="login_modal_title k_flex_col k_gap_15 sign_in_title">-->
+    <!--      <h2>Sign In</h2>-->
+    <!--      <p>-->
+    <!--        Don't have an account yet?-->
+    <!--        <span id="swich-to-sign_up-content">Sign up</span> for free-->
+    <!--      </p>-->
+    <!--    </div>-->
+    <!--    <div class="login_modal_title k_flex_col k_gap_15 sign_up_title hide">-->
+    <!--      <h2>Sign Up</h2>-->
+    <!--      <p>-->
+    <!--        Already have an account?-->
+    <!--        <span id="swich-to-sign_in-content">Log in</span> for free-->
+    <!--      </p>-->
+    <!--    </div>-->
+    <!--    <div class="login_modal_input k_flex_col k_gap_10">-->
+    <!--      <div class="signup-input-box hide-on-signin hide">-->
+    <!--        <input type="text" id="first_name" placeholder="First Name" />-->
+    <!--        <input type="text" id="last_name" placeholder="Last Name" />-->
+    <!--        <input-->
+    <!--          type="number"-->
+    <!--          id="phone_no"-->
+    <!--          placeholder="Your Contact"-->
+    <!--          onKeyPress="if(this.value.length==10) return false;"-->
+    <!--        />-->
+    <!--      </div>-->
+    <!--      <input-->
+    <!--        type="text"-->
+    <!--        id="username"-->
+    <!--        placeholder="Your username or email"-->
+    <!--      />-->
+    <!--      <div class="login_modal_password_input">-->
+    <!--        <input-->
+    <!--          type="password"-->
+    <!--          id="login_password_input"-->
+    <!--          placeholder="Password"-->
+    <!--        />-->
+    <!--        <div class="k_eye_icon k_flex">-->
+    <!--          <i class="fa-solid fa-eye"></i>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--    <div class="login_modal_checkbox_container k_row" id="for_sign_in">-->
+    <!--      <div class="login_modal_checkbox k_flex k_gap_5">-->
+    <!--        <input type="checkbox" />-->
+    <!--        <div class="k_underline_transition_1">-->
+    <!--          <h3>Stay signed in</h3>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="k_forget_password_text k_underline_transition_1">-->
+    <!--        <h3>Forgot your password?</h3>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--    <div class="login_modal_checkbox_container k_row hide" id="for_sign_up">-->
+    <!--      <div class="login_modal_checkbox k_flex k_gap_5">-->
+    <!--        <input type="checkbox" />-->
+    <!--        <div>-->
+    <!--          <h3>-->
+    <!--            Yes, I agree with <a href="privacy.html">Privacy Policy</a> and-->
+    <!--            Terms of Use-->
+    <!--          </h3>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--    <div class="login_btn">-->
+    <!--      <button onclick="signIn(event)" class="k_flex">-->
+    <!--        <p class="btn-submit-text">Log In</p>-->
+    <!--      </button>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</div>-->
+        <div class="modal-overlay" id="loginModal">
+      <div class="close-login-modal-wrapper" onclick="closeModal()"></div>
+      <div class="modal">
+        <div class="login-modal-close-btn k_flex" onclick="closeModal()">
+          &times;
+        </div>
+    <h4 class="login_modal_title k_flex_col k_gap_15 sign_in_title">Please Login First</h4>
+    <p>You cannot access this feature without logging in. Please click the Login button below.</p>
+    <button onclick="window.location.href='/pages/login.html'" class="k_flex_button">Login Now</button>
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+
+    <!-- Top Search Overlay -->
+    <!-- k_ -->
+
+    <div class="search_wrapper_overlay" onclick="closeSearch()"></div>
+
+    <div class="top-search-overlay" id="searchModal">
+      <div class="top-search-bar">
+        <span class="search-close-btn" onclick="closeSearch()">&times;</span>
+
+        <div class="search-content">
+          <div class="search-left">
+            <img
+              src="../assets/images/logo.png"
+              alt="Logo"
+              class="search-logo"
+            />
+          </div>
+
+          <div class="search-center">
+            <div class="search-container">
+              <select class="search-category" id="search-category" onchange="goToCategory(this)">
+                <option selected></option>
+                <option></option>
+                <option></option>
+              </select>
+              <div class="search-h-line"></div>
+              <input
+                type="text"
+                class="search-input"
+                 id="search-input"
+                placeholder="Search products"
+              />
+              <button onclick="doSearch()" class="search-button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+            
+            <div id="search-results"></div>
+              <div class="search-popup" id="search-popup">
+              <ul id="search-results-list"></ul>
+              </div>
+          </div>
+
+          <div class="search-right">
+            <div class="icons m-hide">
+              <div class="icon-btn" onclick="openModal()">
+                <i class="fa-regular fa-user"></i>
+              </div>
+
+              <div class="icon-btn" onclick="location='wishlist.html'">
+             <i class="fa-regular fa-heart"></i>
+             <span class="icon-badge wishlist-icon-badge">0</span>
+              </div>
+
+              <div class="bd-icon-btn" onclick="openCart()">
+                <i class="fa-solid fa-bag-shopping"></i
+                ><span class="bd-icon-badge">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-result">
+        <div class="bd-cart-body" id="bd-cartBody">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png"
+            alt="Empty Cart"
+            class="bd-empty-cart-img"
+          />
+          <h3>Your cart is currently empty.</h3>
+          <p>
+            You may check out all the available products and buy some in the
+            shop.
+          </p>
+          <button
+            onclick="window.location.href='shop.html'"
+            class="bd-cart-btn"
+          >
+            Return to shop
+          </button>
+        </div>
+        <div class="bd-cart-body" id="bd-cartBody">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png"
+            alt="Empty Cart"
+            class="bd-empty-cart-img"
+          />
+          <h3>Your cart is currently empty.</h3>
+          <p>
+            You may check out all the available products and buy some in the
+            shop.
+          </p>
+          <button
+            onclick="window.location.href='shop.html'"
+            class="bd-cart-btn"
+          >
+            Return to shop
+          </button>
+        </div>
+        <div class="bd-cart-body" id="bd-cartBody">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png"
+            alt="Empty Cart"
+            class="bd-empty-cart-img"
+          />
+          <h3>Your cart is currently empty.</h3>
+          <p>
+            You may check out all the available products and buy some in the
+            shop.
+          </p>
+          <button
+            onclick="window.location.href='shop.html'"
+            class="bd-cart-btn"
+          >
+            Return to shop
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="bd-overlay" id="bd-cartOverlay" onclick="closeCart()"></div>
+
+    <!-- Cart Drawer -->
+    <div class="bd-cart-drawer" id="bd-cartDrawer">
+      <div class="bd-cart-header">
+        <h2>Shopping Cart</h2>
+        <span
+          class="bd-cart-close"
+          onclick="closeCart()"
+          style="cursor: pointer"
+          >&times;</span
+        >
+      </div>
+
+      <!-- Cart Body -->
+      <div class="bd-cart-body" id="bd-cartBody">
+        <div class="cart-container" id="cart-container">
+          <div class="cart-content-box">
+            <div class="cart-item-img">
+              <img src="../assets/images/shirt-1.webp" alt="" />
+            </div>
+            <div class="cart-item-info">
+              <h3>Shirt</h3>
+              <h3>₹599.00</h3>
+              <div class="cart-item-quantity">
+                <div class="cart-quantity-input-box">
+                  <button class="decrease">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <button class="increase">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                  <input
+                    type="number"
+                    class="quantity-input"
+                    value="1"
+                    readonly
+                  />
+                </div>
+                <div class="cart-item-remove">
+                  <h3>Remove</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-content-box">
+            <div class="cart-item-img">
+              <img src="../assets/images/shirt-1.webp" alt="" />
+            </div>
+            <div class="cart-item-info">
+              <h3>Shirt</h3>
+              <h3>₹599.00</h3>
+              <div class="cart-item-quantity">
+                <div class="cart-quantity-input-box">
+                  <button class="decrease">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <button class="increase">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                  <input type="number" class="quantity-input" value="2" />
+                </div>
+                <div class="cart-item-remove">
+                  <h3>Raemove</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-content-box">
+            <div class="cart-item-img">
+              <img src="" alt="" />
+            </div>
+            <div class="cart-item-info">
+              <h3></h3>
+              <h3></h3>
+              <div class="cart-item-quantity">
+                <div class="cart-quantity-input-box">
+                  <button class="decrease">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <button class="increase">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                  <input type="number" class="quantity-input" value="2" />
+                </div>
+                <div class="cart-item-remove">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-content-box">
+            <div class="cart-item-img">
+              <img src="../assets/images/shirt-1.webp" alt="" />
+            </div>
+            <div class="cart-item-info">
+              <h3></h3>
+              <h3></h3>
+              <div class="cart-item-quantity">
+                <div class="cart-quantity-input-box">
+                  <button class="decrease">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <button class="increase">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                  <input type="number" class="quantity-input" value="2" />
+                </div>
+                <div class="cart-item-remove">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-content-box">
+            <div class="cart-item-img">
+              <img src="../assets/images/shirt-1.webp" alt="" />
+            </div>
+            <div class="cart-item-info">
+              <h3></h3>
+              <h3></h3>
+              <div class="cart-item-quantity">
+                <div class="cart-quantity-input-box">
+                  <button class="decrease">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <button class="increase">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                  <input type="number" class="quantity-input" value="2" />
+                </div>
+                <div class="cart-item-remove">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <h3>Your cart is currently empty.</h3>
+            <p>You may check out all the available products and buy some in the shop.</p>
+            <button onclick="window.location.href='shop.html'" class="bd-cart-btn">Return to shop</button> -->
+      </div>
+
+      <div class="k-cart-footer">
+        <div class="k-cart-footer-top">
+        
+          <!--<div class="k-footer-cart-addon right-line">-->
+          <!--  <div class="k-footer-cart-addon-icon">-->
+          <!--    <i class="fa-solid fa-truck-fast"></i>-->
+          <!--  </div>-->
+          <!--  <h3></h3>-->
+          <!--</div>-->
+     
+        </div>
+        <div class="k-cart-total-container">
+          <div class="k-cart-row k-cart-subtotal">
+            <h3>Subtotal</h3>
+            <h4></h4>
+          </div>
+          <div class="k-cart-row k-cart-shipping">
+            <h3>Shipping</h3>
+            <h4>Free shipping</h4>
+          </div>
+        </div>
+        <div class="k-cart-row k-cart-total-price">
+          <h3></h3>
+          <h4></h4>
+        </div>
+        <div class="k-cart-footer-btns">
+          <a href="checkout.html" class="k-cart-checkout-btn">Checkout</a>
+          <a href="view-cart.html" class="k-cart-view-btn">View cart</a>
+        </div>
+      </div>
+      <!-- <div class="bd-cart-body" id="bd-cartBody">
+            <img src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png" alt="Empty Cart"
+                class="bd-empty-cart-img" />
+            <h3>Your cart is currently empty.</h3>
+            <p>You may check out all the available products and buy some in the shop.</p>
+            <button onclick="window.location.href='shop.html'" class="bd-cart-btn">Return to shop</button>
+        </div> -->
+
+      <!-- Cart Footer (Only visible when cart has items) -->
+      <!-- <div id="bd-cartFooter" style="display:none; border-top:1px solid #ccc; padding:15px;">
+            <div class="bd-cart-note">
+                <i class="fas fa-sticky-note"></i> Add a note to your order
+            </div>
+            <div class="bd-cart-shipping">
+                <i class="fas fa-truck"></i> Shipping & taxes calculated at checkout
+            </div>
+            <div class="bd-cart-coupon">
+                <i class="fas fa-tag"></i> Apply Coupon
+            </div>
+            <div class="bd-cart-summary">
+                <p>Subtotal: <span id="bd-subtotal">₹0.00</span></p>
+                <p>Total: <strong id="bd-total">₹0.00</strong></p>
+            </div>
+            <div class="bd-cart-buttons">
+                <button onclick="window.location.href='viewcart.html'" class="bd-cart-btn">View Cart</button>
+                <button onclick="alert('Proceeding to checkout...')" class="bd-cart-btn">Checkout</button>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="h_product_view_container" id="h_quick_view_Container">
+      <div
+        class="h_quick_view_overlay"
+        id="h_quick_view_overlay"
+        onclick="closeQuickView()"
+      ></div>
+
+      <div class="h_product_view">
+        <div class="h_product_view_img">
+          <div style= "object-fit:cover" class="h_product_view_imgs">
+            <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+          </div>
+          <div class="h_product_img_next k_flex">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="h_product_img_prev k_flex">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </div>
+        <div class="close_h_product k_flex" onclick="closeQuickView()">
+          <i class="bi bi-x-lg"></i>
+        </div>
+        <div class="h_product_desc">
+          <span class="h_product_discount">-45%</span>
+          <div class="h_product_view_top k_flex space-between">
+            <h2>Men Color Block Polo T-Shirt</h2>
+            <div
+              class="icon-with-label h_icon_with_label"
+              onclick="addToWishlist()"
+            >
+              <span class="icon-label">Add To Wishlist</span>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <div class="h_product_view_middle k_flex space-between">
+            <div class="h_product_price">
+              <h3 class="fake_price k_flex">
+                <del>₹999.00</del><span class="price">₹899.00</span>
+              </h3>
+            </div>
+         
+          </div>
+             <div class="item-review-star" style="color: #f0c040; font-size: 16px; margin-top: 4px" >
+              ★★★★★
+              <span style="color: gray; font-size: 14px">(0 reviews)</span>
+            </div>
+          <div class="h_product_qty_input">
+            <div class="cart-item-quantity h_product_qty">
+              <div class="cart-quantity-input-box h_product_quantity_input">
+                <button class="decrease">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <button class="increase">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <input type="number" class="quantity-input" value="1" />
+              </div>
+              <button class="add-to-cart-btn">Add to cart</button>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="buy-now">Buy Now</button>
+          </div>
+          <div class="singal_product_option options">
+            <!--<div class="k_flex k_gap_10">-->
+            <!--  <i class="bi bi-question-circle"></i> Ask a Question-->
+            <!--</div>-->
+            <div
+              class="k_add_rating k_flex k_gap_10"
+              onclick="openRatingPopup()"
+            >
+              <i class="bi bi-star"></i>Add Ratings
+            </div>
+          </div>
+          <div class="delivery">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span
+              ><strong>Estimated Delivery:</strong> &nbsp; 17 - 24 Apr,
+              2025</span
+            >
+          </div>
+          <div class="payment-logos">
+            <div class="payment-logos-img-container">
+              <div class="payment-logo-img-full">
+                <img src="../assets/images/payment.png" alt="" />
+              </div>
+            </div>
+            <div class="secure">Guaranteed safe &amp; secure checkout</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rating_review_popup_container">
+      <div class="rating_review_popup_content">
+        <div class="popup_title">
+          <h2>Help us improve!</h2>
+          <div class="close-share-modal-svg" onclick="closeRatingPopup()">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L17 17M1 17L17 1"
+                stroke="#828282"
+                stroke-width="1.5"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="star-modal-top-title">
+          <h2>How many stars would you give to us?</h2>
+        </div>
+        <div class="star-modal-star-svg-container">
+          <div class="star-modal-star-svg-content">
+            <svg
+              class="svg-star"
+              data-index="1"
+              width="32"
+              height="30"
+              viewBox="0 0 32 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0.5L20.2321 10.6751L31.2169 11.5557L22.8476 18.7249L25.4046 29.4443L16 23.7L6.59544 29.4443L9.15239 18.7249L0.783095 11.5557L11.7679 10.6751L16 0.5Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="star-modal-star-svg-content">
+            <svg
+              class="svg-star"
+              data-index="2"
+              width="32"
+              height="30"
+              viewBox="0 0 32 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0.5L20.2321 10.6751L31.2169 11.5557L22.8476 18.7249L25.4046 29.4443L16 23.7L6.59544 29.4443L9.15239 18.7249L0.783095 11.5557L11.7679 10.6751L16 0.5Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="star-modal-star-svg-content">
+            <svg
+              class="svg-star"
+              data-index="3"
+              width="32"
+              height="30"
+              viewBox="0 0 32 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0.5L20.2321 10.6751L31.2169 11.5557L22.8476 18.7249L25.4046 29.4443L16 23.7L6.59544 29.4443L9.15239 18.7249L0.783095 11.5557L11.7679 10.6751L16 0.5Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="star-modal-star-svg-content">
+            <svg
+              class="svg-star"
+              data-index="4"
+              width="32"
+              height="30"
+              viewBox="0 0 32 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0.5L20.2321 10.6751L31.2169 11.5557L22.8476 18.7249L25.4046 29.4443L16 23.7L6.59544 29.4443L9.15239 18.7249L0.783095 11.5557L11.7679 10.6751L16 0.5Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="star-modal-star-svg-content">
+            <svg
+              class="svg-star"
+              data-index="5"
+              width="32"
+              height="30"
+              viewBox="0 0 32 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 0.5L20.2321 10.6751L31.2169 11.5557L22.8476 18.7249L25.4046 29.4443L16 23.7L6.59544 29.4443L9.15239 18.7249L0.783095 11.5557L11.7679 10.6751L16 0.5Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="star-modal-textarea-content">
+          <textarea
+            class="star-modal-textarea-input"
+            placeholder="Add Comment"
+          ></textarea>
+        </div>
+        <div class="give-star-submit">
+          <button class="give-star-submit-btn" onclick="addRating()">
+            <h2>Submit Review</h2>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- -->
+    <!-- NOTE : isme mtlb header me cart wala model bhi open hoga -->
+
+    <!-- ========= header part end here ============== -->
+
+
+
+
+    <!-- Delivery Location     -->
+
+   
+
+<!-- categories section -->
+
+
+<div class="cate_box_group" id="topcatebox" >
+
+  <h2>Categories</h2>
+
+    <div class="cate_box" >
+      <img src="/assets/images/shirt-2.webp" alt="">
+      <p>t-shirt</p>
+    </div>
+
+
+        <div class="cate_box">
+      <img src="/assets/images/shirt-2.webp" alt="">
+      <p>t-shirt</p>
+    </div>
+
+
+        <div class="cate_box">
+      <img src="/assets/images/shirt-2.webp" alt="">
+      <p>t-shirt</p>
+    </div>
+
+
+      <div class="cate_box">
+      <img src="/assets/images/shirt-2.webp" alt="">
+      <p>t-shirt</p>
+    </div>
+
+
+        <div class="cate_box">
+      <img src="/assets/images/shirt-2.webp" alt="">
+      <p>t-shirt</p>
+    </div>
+
+    
+        <div class="cate_box">
+      <img src="/assets/images/shirt-2.webp" alt="">
+      <p>t-shirt</p>
+    </div>
+
+    
+        <div class="cate_box">
+      <img src="/assets/images/shirt-2.webp" alt="">
+      <p>t-shirt</p>
+    </div>
+</div>
+
+
+
+
+
+    <section id="slider-img" class="slider-container">
+      <div class="owl-carousel owl-theme" id="main_banner_carousel">
+        <div class="item">
+          <div class="card">
+            <img src="../assets/images/banner1.jpg" alt="Oversized T-Shirt" />
+            <h2>Oversized T-Shirt</h2>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="../assets/images/banner2.jpg" alt="Savings Zone" />
+            <h2>Savings Zone</h2>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="../assets/images/b1.webp" alt="Buy 3 at ₹999" />
+            <h2>Buy 3 @ ₹999</h2>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img src="../assets/images/b3.webp" alt="Star Gazer Tee" />
+            <h2>Star Gazer Tee</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- <img src="../assets/images/img1.jpeg" alt="" class="mobile-top-img"> -->
+
+    <div id="today-best-deal-section">
+      <div class="deal-header">
+        <div
+          style="display: flex; align-items: center; justify-content: space-between;     padding-inline: 2%; padding-block: 2%;"
+          class="deal-header-content"
+        >
+          <div class="deal-title">Today best deals</div>
+          <div class="countdown-box">
+            End in : <span id="countdown"> 00 : 00 : 00 : 00</span>
+          </div>
+        </div>
+        <!-- <a href="shop.html" class="shop-link k_underline_transition_2"
+          >Shop all items</a
+        > -->
+      </div>
+
+      
+
+      <section class="product-section k_mt-20" id="todayBestDeal">
+        <div class="product">
+          <a href="singleproduct.html">
+            <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+          </a>
+          <div class="discount-label">24%</div>
+          <p>Casual</p>
+          <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+          <!-- Star Ratings -->
+          <!-- Star Ratings -->
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price-container">
+            <span class="old-price">₹699.00</span>
+            <span class="new-price">₹599.00</span>
+          </div>
+
+          <div class="icon-container">
+            <!-- Eye Icon with Label -->
+            <div class="icon-with-label">
+              <span class="icon-label">View Product</span>
+              <i class="fas fa-eye"></i>
+            </div>
+
+            <!-- Heart Icon with Label -->
+            <div class="icon-with-label">
+              <span class="icon-label">Visit Wishlist</span>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <button
+            class="add-to-cart"
+            data-id="101"
+            data-title="Mens Cotton Stripe Shirt"
+            data-price="599"
+            data-img="../assets/images/C731_T-GREEN_1.webp"
+          >
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product">
+          <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+          <div class="discount-label">24%</div>
+          <p>Casual</p>
+          <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+           Star Ratings 
+           Star Ratings 
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price-container">
+            <span class="old-price">₹699.00</span>
+            <span class="new-price">₹599.00</span>
+          </div>
+
+          <div class="icon-container">
+             Eye Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">View Product</span>
+              <i class="fas fa-eye"></i>
+            </div>
+
+             Heart Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">Visit Wishlist</span>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+          <div class="discount-label">24%</div>
+          <p>Casual</p>
+          <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+           Star Ratings 
+           Star Ratings 
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price-container">
+            <span class="old-price">₹699.00</span>
+            <span class="new-price">₹599.00</span>
+          </div>
+
+          <div class="icon-container">
+             Eye Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">View Product</span>
+              <i class="fas fa-eye"></i>
+            </div>
+
+             Heart Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">Visit Wishlist</span>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+          <div class="discount-label">24%</div>
+          <p>Casual</p>
+          <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+           Star Ratings 
+           Star Ratings 
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price-container">
+            <span class="old-price">₹699.00</span>
+            <span class="new-price">₹599.00</span>
+          </div>
+
+          <div class="icon-container">
+             Eye Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">View Product</span>
+              <i class="fas fa-eye"></i>
+            </div>
+
+             Heart Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">Visit Wishlist</span>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+          <div class="discount-label">24%</div>
+          <p>Casual</p>
+          <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+           Star Ratings 
+           Star Ratings 
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price-container">
+            <span class="old-price">₹699.00</span>
+            <span class="new-price">₹599.00</span>
+          </div>
+
+          <div class="icon-container">
+             Eye Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">View Product</span>
+              <i class="fas fa-eye"></i>
+            </div>
+
+             Heart Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">Visit Wishlist</span>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+          <div class="discount-label">24%</div>
+          <p>Casual</p>
+          <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+           Star Ratings 
+           Star Ratings 
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price-container">
+            <span class="old-price">₹699.00</span>
+            <span class="new-price">₹599.00</span>
+          </div>
+
+          <div class="icon-container">
+             Eye Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">View Product</span>
+              <i class="fas fa-eye"></i>
+            </div>
+
+             Heart Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">Visit Wishlist</span>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+          <div class="discount-label">24%</div>
+          <p>Casual</p>
+          <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+           Star Ratings 
+           Star Ratings 
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price-container">
+            <span class="old-price">₹699.00</span>
+            <span class="new-price">₹599.00</span>
+          </div>
+
+          <div class="icon-container">
+             Eye Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">View Product</span>
+              <i class="fas fa-eye"></i>
+            </div>
+
+             Heart Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">Visit Wishlist</span>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+          <div class="discount-label">24%</div>
+          <p>Casual</p>
+          <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+           Star Ratings 
+           Star Ratings 
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price-container">
+            <span class="old-price">₹699.00</span>
+            <span class="new-price">₹599.00</span>
+          </div>
+
+          <div class="icon-container">
+             Eye Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">View Product</span>
+              <i class="fas fa-eye"></i>
+            </div>
+
+             Heart Icon with Label 
+            <div class="icon-with-label">
+              <span class="icon-label">Visit Wishlist</span>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </section>
+    </div>
+
+
+  <div class="product-relative">
+    <h1>Recently viewed products <svg width="24px" height="24px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><ellipse fill="#F5F8FA" cx="8.828" cy="18" rx="7.953" ry="13.281"></ellipse><path fill="#E1E8ED" d="M8.828 32.031C3.948 32.031.125 25.868.125 18S3.948 3.969 8.828 3.969S17.531 10.132 17.531 18s-3.823 14.031-8.703 14.031zm0-26.562C4.856 5.469 1.625 11.09 1.625 18s3.231 12.531 7.203 12.531S16.031 24.91 16.031 18S12.8 5.469 8.828 5.469z"></path><circle fill="#8899A6" cx="6.594" cy="18" r="4.96"></circle><circle fill="#292F33" cx="6.594" cy="18" r="3.565"></circle><circle fill="#F5F8FA" cx="7.911" cy="15.443" r="1.426"></circle><ellipse fill="#F5F8FA" cx="27.234" cy="18" rx="7.953" ry="13.281"></ellipse><path fill="#E1E8ED" d="M27.234 32.031c-4.88 0-8.703-6.163-8.703-14.031s3.823-14.031 8.703-14.031S35.938 10.132 35.938 18s-3.824 14.031-8.704 14.031zm0-26.562c-3.972 0-7.203 5.622-7.203 12.531c0 6.91 3.231 12.531 7.203 12.531S34.438 24.91 34.438 18S31.206 5.469 27.234 5.469z"></path><circle fill="#8899A6" cx="25" cy="18" r="4.96"></circle><circle fill="#292F33" cx="25" cy="18" r="3.565"></circle><circle fill="#F5F8FA" cx="26.317" cy="15.443" r="1.426"></circle></g></svg></h1>
+  </div>
+
+  <section class="product-section" id="recent-product">
+    <div class="product">
+      <a href="singleproduct.html">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="">
+      </a>
+      <div class="discount-label">24%</div>
+      <p>Casual</p>
+      <h2>Mens Cotton stript Shirt<br>fit casual fit clerd Shirt</h2>
+      <!-- Star Ratings -->
+      <!-- Star Ratings -->
+      <div class="star-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price-container">
+        <span class="old-price">₹699.00</span>
+        <span class="new-price">₹599.00</span>
+      </div>
+
+
+      <div class="icon-container">
+        <!-- Eye Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">View Product</span>
+          <i class="fas fa-eye"></i>
+        </div>
+
+        <!-- Heart Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">Visit Wishlist</span>
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+
+
+
+
+
+      <button class="add-to-cart" data-id="101" data-title="Mens Cotton Stripe Shirt" data-price="599"
+        data-img="../assets/images/C731_T-GREEN_1.webp">
+        Add to Cart
+      </button>
+    </div>
+
+
+
+
+
+    <div class="product">
+      <img src="../assets/images/C731_T-GREEN_1.webp" alt="">
+      <div class="discount-label">24%</div>
+      <p>Casual</p>
+      <h2>Mens Cotton stript Shirt<br>fit casual fit clerd Shirt</h2>
+      <!-- Star Ratings -->
+      <!-- Star Ratings -->
+      <div class="star-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price-container">
+        <span class="old-price">₹699.00</span>
+        <span class="new-price">₹599.00</span>
+      </div>
+
+
+      <div class="icon-container">
+        <!-- Eye Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">View Product</span>
+          <i class="fas fa-eye"></i>
+        </div>
+
+        <!-- Heart Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">Visit Wishlist</span>
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+
+
+
+      <button class="add-to-cart">Add to Cart</button>
+
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/C731_T-GREEN_1.webp" alt="">
+      <div class="discount-label">24%</div>
+      <p>Casual</p>
+      <h2>Mens Cotton stript Shirt<br>fit casual fit clerd Shirt</h2>
+      <!-- Star Ratings -->
+      <!-- Star Ratings -->
+      <div class="star-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price-container">
+        <span class="old-price">₹699.00</span>
+        <span class="new-price">₹599.00</span>
+      </div>
+
+
+      <div class="icon-container">
+        <!-- Eye Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">View Product</span>
+          <i class="fas fa-eye"></i>
+        </div>
+
+        <!-- Heart Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">Visit Wishlist</span>
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+
+
+
+      <button class="add-to-cart">Add to Cart</button>
+
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/C731_T-GREEN_1.webp" alt="">
+      <div class="discount-label">24%</div>
+      <p>Casual</p>
+      <h2>Mens Cotton stript Shirt<br>fit casual fit clerd Shirt</h2>
+      <!-- Star Ratings -->
+      <!-- Star Ratings -->
+      <div class="star-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price-container">
+        <span class="old-price">₹699.00</span>
+        <span class="new-price">₹599.00</span>
+      </div>
+
+
+      <div class="icon-container">
+        <!-- Eye Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">View Product</span>
+          <i class="fas fa-eye"></i>
+        </div>
+
+        <!-- Heart Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">Visit Wishlist</span>
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+
+
+
+      <button class="add-to-cart">Add to Cart</button>
+
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/C731_T-GREEN_1.webp" alt="">
+      <div class="discount-label">24%</div>
+      <p>Casual</p>
+      <h2>Mens Cotton stript Shirt<br>fit casual fit clerd Shirt</h2>
+      <!-- Star Ratings -->
+      <!-- Star Ratings -->
+      <div class="star-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price-container">
+        <span class="old-price">₹699.00</span>
+        <span class="new-price">₹599.00</span>
+      </div>
+
+
+      <div class="icon-container">
+        <!-- Eye Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">View Product</span>
+          <i class="fas fa-eye"></i>
+        </div>
+
+        <!-- Heart Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">Visit Wishlist</span>
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+
+
+
+      <button class="add-to-cart">Add to Cart</button>
+
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/C731_T-GREEN_1.webp" alt="">
+      <div class="discount-label">24%</div>
+      <p>Casual</p>
+      <h2>Mens Cotton stript Shirt<br>fit casual fit clerd Shirt</h2>
+      <!-- Star Ratings -->
+      <!-- Star Ratings -->
+      <div class="star-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price-container">
+        <span class="old-price">₹699.00</span>
+        <span class="new-price">₹599.00</span>
+      </div>
+
+
+      <div class="icon-container">
+        <!-- Eye Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">View Product</span>
+          <i class="fas fa-eye"></i>
+        </div>
+
+        <!-- Heart Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">Visit Wishlist</span>
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+
+
+
+      <button class="add-to-cart">Add to Cart</button>
+
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/C731_T-GREEN_1.webp" alt="">
+      <div class="discount-label">24%</div>
+      <p>Casual</p>
+      <h2>Mens Cotton stript Shirt<br>fit casual fit clerd Shirt</h2>
+      <!-- Star Ratings -->
+      <!-- Star Ratings -->
+      <div class="star-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price-container">
+        <span class="old-price">₹699.00</span>
+        <span class="new-price">₹599.00</span>
+      </div>
+
+
+      <div class="icon-container">
+        <!-- Eye Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">View Product</span>
+          <i class="fas fa-eye"></i>
+        </div>
+
+        <!-- Heart Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">Visit Wishlist</span>
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+
+
+
+      <button class="add-to-cart">Add to Cart</button>
+
+    </div>
+
+
+    <div class="product">
+      <img src="../assets/images/C731_T-GREEN_1.webp" alt="">
+      <div class="discount-label">24%</div>
+      <p>Casual</p>
+      <h2>Mens Cotton stript Shirt<br>fit casual fit clerd Shirt</h2>
+      <!-- Star Ratings -->
+      <!-- Star Ratings -->
+      <div class="star-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <div class="price-container">
+        <span class="old-price">₹699.00</span>
+        <span class="new-price">₹599.00</span>
+      </div>
+
+
+      <div class="icon-container">
+        <!-- Eye Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">View Product</span>
+          <i class="fas fa-eye"></i>
+        </div>
+
+        <!-- Heart Icon with Label -->
+        <div class="icon-with-label">
+          <span class="icon-label">Visit Wishlist</span>
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+
+
+
+      <button class="add-to-cart">Add to Cart</button>
+
+    </div>
+
+
+  </section>
+
+
+          <div class="Collection_name" class="Collection_name">Trending Now</div>
+     <!-- <h4 style="    padding-inline: 5%; padding-block: 2%; ">Trending Now</h4> -->
+    <div class="owl-carousel" id="trendingBanner"  style="display: block; padding-left: 2px;      padding-block: 34px;   background: var(--btn-bg-color);">
+  <div><img src="/assets/images/trending 1.avif" alt=""></div>
+  <div><img src="/assets/images/trending 2.avif" alt=""></div>
+  <div><img src="/assets/images/trending 3.avif" alt=""></div>
+  <div><img src="/assets/images/trending 4.avif" alt=""></div>
+</div>
+
+
+    
+
+    <div class="container">
+      <!-- Header -->
+      <div class="home_header">
+        <h2>Shop by category</h2>
+        <a href="category.html" class="underline-link">Shop all categories</a>
+      </div>
+
+      <!-- Scrollable Categories -->
+      <div class="categories" id="fetchCategories">
+        <!-- Category 1 -->
+        <div class="category-item">
+          <img src="../assets/images/img/3.tshirs.webp" alt="Shirts" />
+          <p>Shirts</p>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="category-item">
+          <img src="../assets/images/img/hoodei.webp" alt="T-Shirts" />
+          <p>T-Shirts</p>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="category-item">
+          <img
+            src="../assets/images/img/pant-shirts.webp"
+            alt="Oversized T-Shirts"
+          />
+          <p>Oversized T-Shirts</p>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="category-item">
+          <img
+            src="../assets/images/img/pant-shirts.webp"
+            alt="POLO T-Shirts"
+          />
+          <p>POLO T-Shirts</p>
+        </div>
+      </div>
+      
+  <button id="toggleCategoriesBtn">Show More</button>
+    </div>
+
+    <!-- shop categray  -->
+
+    <section>
+      <div class="shop_category" id="upperBanner">
+        <div class="shop2">
+          <div class="shop2-content">
+            <div class="shop2-text">
+              <h1>T-shirt</h1>
+              <h2>From 399.00</h2>
+            </div>
+            <div class="img-text">
+              <a href="">Shop Now</a>
+            </div>
+          </div>
+          <div class="shop2-img">
+            <img src="../assets/images/megamog_banner_04.jpg" alt="" />
+          </div>
+        </div>
+        <div class="shop2">
+          <div class="shop2-content">
+            <div class="shop2-text dark">
+              <h1>Shirts</h1>
+              <h2>Come and get it !</h2>
+            </div>
+            <div class="img-text dark">
+              <a href="">Shop Sale</a>
+            </div>
+          </div>
+          <div class="shop2-img">
+            <img src="../assets/images/megamog_banner_05.jpg" alt="" />
+          </div>
+        </div>
+        <div class="shop2">
+          <div class="shop2-content">
+            <div class="shop2-text">
+              <h1>Polo T-Shirt</h1>
+              <h2>Click for more info.</h2>
+            </div>
+            <div class="img-text">
+              <a href="">Shop Now</a>
+            </div>
+          </div>
+          <div class="shop2-img">
+            <img src="../assets/images/megamog_banner_06.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="shopby_other">
+      <h4>Shopping for others?</h4>
+
+      <div class="shop_cate">
+        <div class="shop_cate_box" onclick="ftechbyidmen()">
+          <img src="../assets/images/f3.png" alt="">
+          <h5>Men</h5>
+        </div>
+           <div class="shop_cate_box" onclick="ftechbyidwomen()">
+          <img src="../assets/images/f1.png" alt="">
+          <h5>women</h5>
+        </div>
+
+           <div class="shop_cate_box" onclick="ftechbyidkids()">
+          <img src="../assets/images/f4.png" alt="">
+          <h5>Kids</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs-container">
+      <h2>Best seller in the last month</h2>
+      <div class="tabs" id="bestSellerFilterByCategory">
+        <!-- <div onclick="product_filter('top-20','p2')" class="tab active">
+          Top 20
+        </div>
+        <div onclick="product_filter('shirt','p2')" class="tab">Shirt</div>
+        <div onclick="product_filter('t-shirt','p2')" class="tab">T-Shirt</div>
+        <div onclick="product_filter('polo-t-shirt','p2')" class="tab">
+          Polo T-Shirt
+        </div>
+        <div onclick="product_filter('Oversized-T-Shirt','p2')" class="tab">
+          Oversized T-Shirt
+        </div> -->
+      </div>
+    </div>
+    
+
+    
+    <section class="product-section" id="bestSellerProducts">
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+       <div class="product">
+            <img src="../assets/images/C731_T-GREEN_1.webp" alt="">
+    
+            <div class="discount-label">20%</div>
+            <p>Casual</p>
+            <h2>Mens Cotton stript Shirt<br>fit casual fit clerd Shirt</h2>
+            <h3>$500</h3>
+
+            <div class="icon-container">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-eye"></i>
+            </div>
+
+
+            <button class="add-to-cart">Add to Cart</button>
+
+        </div> 
+    </section>
+    
+    <div class="tabs-container section_tittle" >
+    <h2>Shop By Top Category</h2>
+    </div>
+        <header class="category-header">
+      <div class="Subcategory-list">
+        <div class="subcate_container" id="PrintSubCate"></div>
+      </div>
+    </header>
+    
+
+        <!--extra feature html3-->
+    <div class="tabs-container section_tittle_3" >
+    <h2>hello</h2>
+    </div>
+    
+
+    
+    <!--extra features html 3-->
+    <!-- <div class="tabs-container section_tittle_2 ">
+          <h2>Pocket  Friendly Products</h2>
+        </div> -->
+ <section class="product-section" id="fetchnothreeprodsaccordtotittle">
+  <!-- Example Product -->
+  <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
+    
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+    <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
+    
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+    <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
+    
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+</section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--extra feature html1-->
+    <div class="tabs-container title-section" >
+      <h2></h2>
+    </div>
+    
+    
+        <!--extra features html 1-->
+ <section class="product-section" id="fetchprodaccordtotittles">
+
+  <!-- Example Product -->
+  <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
+    
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+    <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
+    
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+    <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
+    
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+</section>
+
+
+
+    <!--extra feature html2-->
+    <div class="tabs-container section_tittle_2 ">
+      <h2></h2>
+    </div>
+
+
+        <!--extra features html 2-->
+ <section class="product-section" id="Productfetchaccodtotiitles2">
+     
+     
+     
+     
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+     
+
+  <!-- Example Product -->
+  <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
+    
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+    <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
+    
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+    <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
+    
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+</section>
+
+
+<!-- filters by price -->
+
+<h4 class="budgets_text">Budget buys</h4>
+<div class="fliter_section">
+  <div class="filter_box" onclick="window.location.href='product_filters.html?price=500'"> 
+    <p>Under</p> 
+    <h4>500</h4> 
+  </div>
+  <div class="filter_box" onclick="window.location.href='product_filters.html?price=1000'"> 
+    <p>Under</p> 
+    <h4>1000</h4> 
+  </div>
+  <div class="filter_box" onclick="window.location.href='product_filters.html?price=1500'"> 
+    <p>Under</p> 
+    <h4>1500</h4> 
+  </div>
+</div>
+
+
+<!-- <p><sup>₹</sup>100<sub>OFF</sub></p> -->
+
+    <div class="custom-card-container" id="lowerBanner">
+      <!-- Card 1 -->
+      <div class="custom-card">
+        <img
+          src="../assets/images/megamog_banner_07.jpg"
+          alt="Black Bottle"
+          class="custom-card-img"
+        />
+        <div class="custom-card-overlay">
+          <div class="custom-card-price">
+            $99.00 <span class="custom-card-old-price">$188.00</span>
+          </div>
+          <h2 class="custom-card-title">The matte black<br />water bottle</h2>
+          <a href="#" class="custom-card-link k_underline_transition_2"
+            >Shop now</a
+          >
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="custom-card">
+        <img
+          src="../assets/images/megamog_banner_08.jpg"
+          alt="Watering Can"
+          class="custom-card-img"
+        />
+        <div class="custom-card-overlay">
+          <div class="custom-card-price">
+            $99.00 <span class="custom-card-old-price">$188.00</span>
+          </div>
+          <h2 class="custom-card-title">Watering can<br />ivory/gold</h2>
+          <a href="#" class="custom-card-link k_underline_transition_2"
+            >Shop &#xf060; now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs-container" id="tab-container-1">
+      <h2>Shirts</h2>
+      <div class="tabs">
+        <div onclick="product_filter('top-20','p3')" class="tab active">
+          Top 20
+        </div>
+      </div>
+    </div>
+    
+    <section class="product-section" id="product1">
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+    <h4 class="Collection_name">Latest Collection</h4>
+    <div class="owl-carousel" style="display: block;" id="latestBanner">
+  <div><img src="/assets/images/banner_men home" alt=""></div>
+  <div><img src="/assets/images/banner_men home_1.avif" alt=""></div>
+  <div><img src="/assets/images/banner_men home_2.avif" alt=""></div>
+  <div><img src="/assets/images/banner_men home_3.webp" alt=""></div>
+</div>
+    <div class="tabs-container" id="tab-container-2">
+      <h2>T-Shirts</h2>
+      <div class="tabs">
+        <div onclick="product_filter('top-20','p4')" class="tab active">
+          Top 20
+        </div>
+        <div onclick="product_filter('shirt','p4')" class="tab">Shirt</div>
+        <div onclick="product_filter('t-shirt','p4')" class="tab">T-Shirt</div>
+        <div onclick="product_filter('polo-t-shirt','p4')" class="tab">
+          Polo T-Shirt
+        </div>
+        <div onclick="product_filter('Oversized-T-Shirt','p4')" class="tab">
+          Oversized T-Shirt
+        </div>
+      </div>
+    </div>
+    <section class="product-section" id="product2">
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+
+
+    <h4 class="Collection_name">Kids Collection</h4>
+    <div class="owl-carousel" style="display: block;" id="kidsBanner">
+  <div><img src="/backend/dashboard/backendapi/newapi/images/product/main/PD25100405202668e10a023dd14.jpg" alt=""></div>
+  <div><img src="/backend/dashboard/backendapi/newapi/images/product/main/PD25100403364168e0f1b1b24ba.jpg" alt=""></div>
+  <div><img src="/backend/dashboard/backendapi/newapi/images/product/main/PD25100403252168e0ef09e7377.jpg" alt=""></div>
+  <div><img src="/backend/dashboard/backendapi/newapi/images/product/main/PD25100403203768e0eded97168.jpg" alt=""></div>
+</div>
+
+
+<!--here-->
+
+    <div class="tabs-container" id="tab-container-3">
+      <h2></h2>
+      <div class="tabs">
+        <div onclick="product_filter('', '')" class="tab active">
+          
+        </div>
+        <div onclick="product_filter('' , '')" class="tab"></div>
+        <div onclick="product_filter('', '')" class="tab"></div>
+        <div onclick="product_filter('', '')" class="tab">
+          
+        </div>
+        <div onclick="product_filter('', '')" class="tab">
+          
+        </div>
+      </div>
+    </div>
+    
+    <section class="product-section" id="product3">
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price"></span>
+          <span class="new-price"></span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label"></span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label"></span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart"></button>
+      </div>
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="../assets/images/C731_T-GREEN_1.webp" alt="" />
+        <div class="discount-label">24%</div>
+        <p>Casual</p>
+        <h2>Mens Cotton stript Shirt<br />fit casual fit clerd Shirt</h2>
+         Star Ratings 
+         Star Ratings 
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <div class="price-container">
+          <span class="old-price">₹699.00</span>
+          <span class="new-price">₹599.00</span>
+        </div>
+
+        <div class="icon-container">
+           Eye Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">View Product</span>
+            <i class="fas fa-eye"></i>
+          </div>
+
+           Heart Icon with Label 
+          <div class="icon-with-label">
+            <span class="icon-label">Visit Wishlist</span>
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+
+
+
+    
+
+    <!-- support section  -->
+    <div class="support">
+      <div class="info-strip-section">
+        <div class="info-strip-container">
+          <div class="info-item">
+            <i class="fas fa-box info-icon"></i>
+            <div class="info-text">
+              Fast, free delivery &<span>assembly</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <!-- <i class="fas fa-dollar-sign info-icon"></i> -->
+            <div class="info-item-logo-img">
+              <img src="../assets/images/megamog_box_02.png" alt="" />
+            </div>
+            <div class="info-text">
+              Money guarantee within<span>30 days</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-headset info-icon"></i>
+            <div class="info-text">
+              Online support available<span>24/7</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-credit-card info-icon"></i>
+            <div class="info-text">Pay with<span>Multiple Cards</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Footer Start ===== -->
+    <footer class="bs-footer">
+      <div class="bs-footer-container">
+        <!-- Logo & Social -->
+        <div class="bs-footer-logo">
+          <a href="home.html">
+            <img src="../assets/images/logo.png" alt="Logo" />
+          </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="bs-footer-links">
+          <h2>Quick Links</h2>
+          <ul>
+            <!--<li><a href="track-order.html">Track Order</a></li>-->
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            <li><a href="refund-returns.html">Return & Refund Policy</a></li>
+            <li><a href="terms-condition.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="bs-footer-contact">
+          <h2>Contact</h2>
+          <div class="bs-footer-mail">
+            <a href="mailto:Street Pulse@gmail.com" class="bs-email-link">
+              <i class="fas fa-envelope"></i>
+              <p>Mayza@gmail.com</p>
+            </a>
+          </div>
+        </div>
+              <div class="bs-footer-logo">
+        <h2>Follow Us</h2>
+          <div class="bs-social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+      </div>
+    </footer>
+    <!-- ===== Footer End ===== -->
+
+    <section class="cprt-footer">
+      <!-- footer  -->
+      <div class="footer">
+        <div class="leftfooter">© 2024 Ledove. All Rights Reserved.</div>
+
+        <div class="rightfooter">
+          <img src="../assets/images/payment.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div id="page-mobile-tabs" class="k-mobile-footer">
+      <div class="mobile-footer-link-content">
+        <a href="home.html" class="mobile-tab-link active" aria-label="Home">
+          <div
+            class="mobile-tab-icon active"
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+          >
+         <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="black"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+          </div>
+          <p>Home</p>
+        </a>
+        <a href="category.html" class="mobile-tab-link" aria-label="Shop">
+          <div
+            class="mobile-tab-icon"
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 4.125V17.875C1 18.3958 1.18229 18.8385 1.54688 19.2031C1.91146 19.5677 2.35417 19.75 2.875 19.75H19.125C19.6458 19.75 20.0885 19.5677 20.4531 19.2031C20.8177 18.8385 21 18.3958 21 17.875V4.125C21 3.60417 20.8177 3.16146 20.4531 2.79688C20.0885 2.43229 19.6458 2.25 19.125 2.25H2.875C2.35417 2.25 1.91146 2.43229 1.54688 2.79688C1.18229 3.16146 1 3.60417 1 4.125ZM10.0625 4.125V10.0625H2.875V4.35938C2.875 4.30729 2.90104 4.25521 2.95312 4.20312C3.00521 4.15104 3.05729 4.125 3.10938 4.125H10.0625ZM2.875 11.9375H10.0625V17.875H3.10938C3.05729 17.875 3.00521 17.849 2.95312 17.7969C2.90104 17.7448 2.875 17.6927 2.875 17.6406V11.9375ZM11.9375 17.875V11.9375H19.125V17.6406C19.125 17.6927 19.099 17.7448 19.0469 17.7969C18.9948 17.849 18.9427 17.875 18.8906 17.875H11.9375ZM19.125 10.0625H11.9375V4.125H18.8906C18.9427 4.125 18.9948 4.15104 19.0469 4.20312C19.099 4.25521 19.125 4.30729 19.125 4.35938V10.0625Z"
+                fill="black"
+              ></path>
+            </svg>
+          </div>
+           <p>Category</p>
+        </a>
+        <div
+          class="mobile-tab-link login-link open-modal-login"
+         onclick="openModal()"
+          aria-label="Log in"
+        >
+          <div
+            class="mobile-tab-icon"
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.5156 12.875C15.9479 12.875 17.1719 13.3958 18.1875 14.4375C19.2292 15.4531 19.75 16.6771 19.75 18.1094V19.125C19.75 19.6458 19.5677 20.0885 19.2031 20.4531C18.8385 20.8177 18.3958 21 17.875 21H4.125C3.60417 21 3.16146 20.8177 2.79688 20.4531C2.43229 20.0885 2.25 19.6458 2.25 19.125V18.1094C2.25 16.6771 2.75781 15.4531 3.77344 14.4375C4.8151 13.3958 6.05208 12.875 7.48438 12.875C7.82292 12.875 8.31771 12.9792 8.96875 13.1875C9.64583 13.3958 10.3229 13.5 11 13.5C11.6771 13.5 12.3542 13.3958 13.0312 13.1875C13.7083 12.9792 14.2031 12.875 14.5156 12.875ZM17.875 19.125V18.1094C17.875 17.1979 17.5365 16.4167 16.8594 15.7656C16.2083 15.0885 15.4271 14.75 14.5156 14.75C14.4375 14.75 14.0208 14.8542 13.2656 15.0625C12.5365 15.2708 11.7812 15.375 11 15.375C10.2188 15.375 9.45052 15.2708 8.69531 15.0625C7.96615 14.8542 7.5625 14.75 7.48438 14.75C6.57292 14.75 5.77865 15.0885 5.10156 15.7656C4.45052 16.4167 4.125 17.1979 4.125 18.1094V19.125H17.875ZM14.9844 10.6094C13.8906 11.7031 12.5625 12.25 11 12.25C9.4375 12.25 8.10938 11.7031 7.01562 10.6094C5.92188 9.51562 5.375 8.1875 5.375 6.625C5.375 5.0625 5.92188 3.73438 7.01562 2.64062C8.10938 1.54688 9.4375 1 11 1C12.5625 1 13.8906 1.54688 14.9844 2.64062C16.0781 3.73438 16.625 5.0625 16.625 6.625C16.625 8.1875 16.0781 9.51562 14.9844 10.6094ZM13.6562 3.96875C12.9271 3.23958 12.0417 2.875 11 2.875C9.95833 2.875 9.07292 3.23958 8.34375 3.96875C7.61458 4.69792 7.25 5.58333 7.25 6.625C7.25 7.66667 7.61458 8.55208 8.34375 9.28125C9.07292 10.0104 9.95833 10.375 11 10.375C12.0417 10.375 12.9271 10.0104 13.6562 9.28125C14.3854 8.55208 14.75 7.66667 14.75 6.625C14.75 5.58333 14.3854 4.69792 13.6562 3.96875Z"
+                fill="#000000"
+              ></path>
+            </svg>
+          </div>
+     <p id="profile">Profile</p>
+        </div>
+        <!-- <a
+          href="wishlist.html"
+          class="mobile-tab-link has-badge wishlist-link"
+          aria-label="Wishlist"
+        >
+          <div
+            class="mobile-tab-icon"
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.8906 3.4C18.1615 2.775 17.3151 2.38438 16.3516 2.22813C15.388 2.07188 14.4245 2.15 13.4609 2.4625C12.5234 2.775 11.7031 3.28281 11 3.98594C10.2969 3.28281 9.46354 2.775 8.5 2.4625C7.5625 2.15 6.61198 2.07188 5.64844 2.22813C4.6849 2.38438 3.83854 2.775 3.10938 3.4C2.17188 4.20729 1.54688 5.17083 1.23438 6.29063C0.921875 7.30625 0.908854 8.34792 1.19531 9.41563C1.48177 10.4573 1.97656 11.3427 2.67969 12.0719L9.51562 19.025C9.93229 19.4417 10.4271 19.65 11 19.65C11.5729 19.65 12.0677 19.4417 12.4844 19.025L19.3203 12.0719C20.0234 11.3427 20.5182 10.4573 20.8047 9.41563C21.0911 8.34792 21.0911 7.30625 20.8047 6.29063C20.4661 5.17083 19.8281 4.20729 18.8906 3.4ZM17.9922 10.7438L11.1172 17.6969C11.0391 17.801 10.9609 17.801 10.8828 17.6969L4.00781 10.7438C3.53906 10.249 3.20052 9.65 2.99219 8.94688C2.8099 8.21771 2.82292 7.50156 3.03125 6.79844C3.23958 6.04323 3.66927 5.39219 4.32031 4.84531C5.07552 4.22031 5.96094 3.94688 6.97656 4.025C8.01823 4.10313 8.90365 4.51979 9.63281 5.275L11 6.64219L12.3672 5.275C13.0964 4.51979 13.9688 4.10313 14.9844 4.025C16.026 3.94688 16.9245 4.22031 17.6797 4.84531C18.3307 5.39219 18.7604 6.04323 18.9688 6.79844C19.1771 7.50156 19.1771 8.21771 18.9688 8.94688C18.7865 9.65 18.4609 10.249 17.9922 10.7438Z"
+                fill="black"
+              ></path>
+            </svg>
+            <div
+              class="mobile-footer-icon-badge wishlist-icon-badge"
+              data-count="0"
+            >
+              0
+            </div>
+          </div>
+        </a> -->
+
+        <div
+          class="mini-cart__button has-badge mobile-tab-link"
+         onclick="window.location.href='/pages/view-cart.html'"
+          aria-label="Cart"
+        >
+          <div
+            class="mobile-tab-icon"
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.95 6H19.7V17.875C19.7 18.7344 19.3875 19.4635 18.7625 20.0625C18.1635 20.6875 17.4344 21 16.575 21H5.325C4.46563 21 3.72344 20.6875 3.09844 20.0625C2.49948 19.4635 2.2 18.7344 2.2 17.875V6H5.95C5.95 4.61979 6.43177 3.44792 7.39531 2.48438C8.3849 1.49479 9.56979 1 10.95 1C12.3302 1 13.5021 1.49479 14.4656 2.48438C15.4552 3.44792 15.95 4.61979 15.95 6ZM13.1375 3.8125C12.5385 3.1875 11.8094 2.875 10.95 2.875C10.0906 2.875 9.34844 3.1875 8.72344 3.8125C8.12448 4.41146 7.825 5.14062 7.825 6H14.075C14.075 5.14062 13.7625 4.41146 13.1375 3.8125ZM17.825 17.875V7.875H15.95V9.4375C15.95 9.69792 15.8589 9.91927 15.6766 10.1016C15.4943 10.2839 15.2729 10.375 15.0125 10.375C14.7521 10.375 14.5307 10.2839 14.3484 10.1016C14.1661 9.91927 14.075 9.69792 14.075 9.4375V7.875H7.825V9.4375C7.825 9.69792 7.73385 9.91927 7.55156 10.1016C7.36927 10.2839 7.14792 10.375 6.8875 10.375C6.62708 10.375 6.40573 10.2839 6.22344 10.1016C6.04115 9.91927 5.95 9.69792 5.95 9.4375V7.875H4.075V17.875C4.075 18.2135 4.19219 18.5 4.42656 18.7344C4.68698 18.9948 4.98646 19.125 5.325 19.125H16.575C16.9135 19.125 17.2 18.9948 17.4344 18.7344C17.6948 18.5 17.825 18.2135 17.825 17.875Z"
+                fill="#000000"
+              ></path>
+            </svg>
+            <div
+              class="mobile-footer-icon-badge mini-cart-badge"
+              data-count="0"
+            >
+              0
+            </div>
+            <p>cart</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="page-scroll-up">
+      <i class="fa-solid fa-up-long"></i>
+    </a>
+
+
+
+
+
+<button id="manageAddressBtn" class="btn-primary">Manage Addresses</button>
+
+
+<div id="addressListModal" class="addressmodal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeAddressList">&times;</span>
+    <h2>Saved Addresses</h2>
+
+    <div id="addressContainer" class="address-list">
+
+      <div class="address-card">
+        <h4>Home</h4>
+        <p>123 Street Name, City, State, 456789</p>
+      </div>
+      <div class="address-card">
+        <h4>Office</h4>
+        <p>456 Corporate Park, City, State, 123456</p>
+      </div>
+    </div>
+    <button id="addNewAddressBtn" class="btn-secondary">+ Add New Address</button>  
+   
+  </div>
+</div>
+
+
+<div id="addAddressModal" class="addressmodal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeAddAddress">&times;</span>
+    <h2>Add New Address</h2>
+
+
+      <form id="addAddressForm" onsubmit="addnewaddress(event)">
+      <label>Full Name</label>
+      <input type="text" id="fullname" placeholder="Enter full name" >
+
+      <label>Address</label>
+      <textarea id="address" placeholder="Enter your full address" ></textarea>
+      
+        <label>Landmark</label>
+      <input type="text" id="landmark" placeholder="At apartment, suite, optional.." >
+      
+         <label>Phone</label>
+      <input type="text" id="phone" placeholder="phone-no" maxlength="10">
+
+      <label>City</label>
+      <input type="text" id="city" placeholder="Enter city" >
+
+      <label>State</label>
+      <input type="text" id="state" placeholder="Enter state" >
+
+      <label>Pincode</label>
+      <input type="text" id="pincode" placeholder="Enter pincode" maxlength="6">
+
+      <button type="submit" class="btn-secondary">Save Address</button>
+    </form>
+  </div>
+</div>
+
+    <!-- jQuery FIRST -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/home.js"></script>
+    <script src="../assets/js/h_product_quick_view.js"></script>
+    <script src="../assets/js/bd-cart-drawer.js"></script>
+    <script src="../assets/js/ratingPopup.js"></script>
+    <script src="../assets/js/shopping_other.js"></script>
+    <script src="../assets/js/give-star-rating.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../assets/js/checkout.js"></script>
+    <script src="../assets/js/category.js"></script>
+
+    <script>
+      async function initializeApp() {
+        $(".loader").show().fadeIn(300);
+
+        try {
+          await loadBanner();
+                // await loadProductsByCategory();
+          await loadProductCart();
+          await fetchCategory();
+          await fetchTodayBestDeal();
+          await fetchCategoryPriority();
+        } catch (error) {
+          console.error("Error loading data:", error);
+        } finally {
+          $(".loader").fadeOut(300); // Hide the loader after everything
+        }
+      }
+
+      $(document).ready(function () {
+        initializeApp();
+         searchcategory();
+      });
+
+// ✅ Run automatically when the home page loads
+$(document).ready(function () {
+  fetchUserData();
+});
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,            // infinite loop
+    margin: 10 ,            // gap between items
+    nav: false,             // next/prev buttons
+    autoplay: true,        // auto scroll
+    autoplayTimeout: 3000, // delay between scrolls
+    responsive: {
+      0: { items: 1 },     // mobile view
+      700: { items: 2 },   // tablet view
+      1000: { items: 3 }   // desktop view
+    }
+  });
+});
+
+function priceFilterRedirect(priceLimit) {
+alert("hello")
+}
+    </script>
+    
+
+
+    
+  </body>
+</html>
