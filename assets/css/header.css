@@ -24,8 +24,8 @@
     padding: 13px 5%;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
-    position: fixed;
-    top: 6%;
+    position: sticky;
+    /* top: 6%; */
         gap: 23px;
     left: 0;
     width: 100%;
@@ -690,8 +690,8 @@ ease forwards;
 
     .search_bar_contain{
     padding: 18px 2%;
-    position: fixed;
-    top: 53px;
+    /* position: fixed;
+    top: 53px; */
     border-bottom: 1px solid #80808042;
     z-index: 955;
     background: #fff;
@@ -755,7 +755,7 @@ ease-in;
         padding-inline: 3%;
         justify-content: space-between;
         align-items: center;
-        margin-top: 34%;
+        /* margin-top: 34%; */
         border-bottom: 0.5px solid #8080801f;
 }
 
