@@ -60,7 +60,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px;
   height: 0px;
   display: none;

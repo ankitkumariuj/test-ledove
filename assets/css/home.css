@@ -51,7 +51,7 @@
   padding: 0px 0;
   /* background: #f8f8f8; */
   position: relative;
-      margin-top: 42px;
+      margin-top: 100px;
 }
 
 .subcat_box img{
@@ -853,10 +853,10 @@ transform: translateX(100px);
 
 
 .product-relative h1 {
-  font-size: 40px;
-  margin-top: 60px;
-  margin-bottom: 30px;
-  text-align: center;
+    padding-block: 2%;
+    padding-inline: 5%;
+    font-size: 30px;
+    font-weight: 400;
         font-family: var(--font-fm2);
 }
 
@@ -1553,16 +1553,16 @@ background: radial-gradient(white, #8a1344);
   }
 
   .header {
-<<<<<<< HEAD
+
           padding-inline: 2%;
     padding-block: 1%;
     margin-top: 15px;
-=======
+
             padding-inline: 2%;
         padding-block: 1%;
       margin-top: 15px;
       /* background: red; */
->>>>>>> d5d297801a68e16816d20ab25b7d0a0ac5e59e14
+
   }
 
   .categories {
