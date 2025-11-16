@@ -2,38 +2,48 @@
 
 
 .Category-box{
-display: flex;
+    display: flex;
     margin-top: 12px;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 20%;
+    width: 159px;
     gap: 0px;
-    height: auto;
+    height: 100%;
 }
 
 .Category-box img{
-   width: 100%;
-    aspect-ratio:205/300;
-        border-radius: 63px;
+ width: 100%;
+    aspect-ratio: 205 / 300;
+    border-radius: 44px;
+            border: 1px solid rgba(128, 128, 128, 0.452);
+            object-fit: cover;
+            object-position: top;
 }
 
 .Category-box a{
-     display: flex;
+   display: flex;
     flex-direction: column;
     align-items: center;
-width: 100%;
+    width: 200px;
+    height: 316px;
+    position: relative;
 }
 
 .subcate_container{
-     width: 100% !important;
+  width: 100% !important;
     height: 100%;
     display: flex;
- column-gap: 20% !important;
-    /* overflow: scroll; */
-    flex-wrap: wrap;
-    justify-content: start;
+    gap: 17px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    justify-content: start !important;
     align-items: center;
-    /* padding: 0 10px;
+    padding: 0px 5% !important;
+}
+
+.cate_name{
+  position: absolute;
+    bottom: 32%;
 }
 
 #slider-img {
@@ -619,7 +629,18 @@ padding-inline: 5%;
   width: 100%;
   padding-inline: 2%;
   flex-wrap: wrap;
+    /* animation: scroll 2s  infinite linear; */
 }
+
+  @keyframes scroll {
+    0%{
+      transform: translateX(-100px);
+    }
+    
+    100%{
+transform: translateX(100px);
+    }
+  }
 
 .shop2 {
 
@@ -797,7 +818,7 @@ padding-inline: 5%;
             flex-direction: row;
         padding-block: 5%;
         overflow: scroll;
-        /* flex-wrap: nowrap; */
+        flex-wrap: nowrap;
                 justify-content: flex-start;
   }
   .Collection_name {
@@ -1532,8 +1553,9 @@ background: radial-gradient(white, #8a1344);
   }
 
   .header {
-            padding-inline: 2%;
-        padding-block: 1%;
+          padding-inline: 2%;
+    padding-block: 1%;
+    margin-top: 15px;
   }
 
   .categories {
@@ -1546,8 +1568,11 @@ background: radial-gradient(white, #8a1344);
     min-width: 96%;
     height: 240px;
     min-height: 240px;
+    /* animation: scroll 2s  infinite linear; */
 
   }
+
+
 
   .shop2-content {
     padding: 15px;
@@ -1642,6 +1667,12 @@ background: radial-gradient(white, #8a1344);
     transform: translateX(-12px);
     scrollbar-width: thin;
   }
+
+  
+.cate_name {
+    position: absolute;
+    bottom: 6%;
+}
 
   /* .tabs::-webkit-scrollbar { 
     height: 3px;
@@ -1808,15 +1839,19 @@ background: radial-gradient(white, #8a1344);
       }
 
       .Category-box img{
-           height: 222px;
-    width: 148px;
-    border-radius: 12px;
+        height: 204px;
+        width: 148px;
+        border-radius: 37px;
+        object-fit: cover;
+        object-position: top;   
+                border: 1px solid gray;
       }
 
       .Category-box a{
-         height: 59vw;
+        height: 100%;
         width: auto;
         margin-right: 50px;
+        position: relative;
       }
 }
 
@@ -1887,6 +1922,7 @@ background: radial-gradient(white, #8a1344);
       margin: 18px auto;
       padding: 12px;
       box-sizing: border-box;
+      display: none;
     }
 
     /* Product card — responsive single-row list */

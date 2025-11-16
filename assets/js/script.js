@@ -49,7 +49,7 @@ function closeModal() {
 
   setTimeout(() => {
     closeLoginModalWrapper.classList.remove("active");
-    loginModalBox.classList.remove("active", "modal-slide-down");
+    loginModalBox.classList.remove("active", "modal-slide-downs");
     loginModal.classList.remove("active");
   }, 500); 
 }

@@ -141,22 +141,40 @@ async function GetMainCategory() {
 }
 
 
+// let lastScrollY = window.scrollY;
 
-let lastScrollY = window.scrollY; // store last position
+// window.addEventListener("scroll", () => {
+//   const myElement = document.querySelector(".search_bar_contain");
 
-window.addEventListener('scroll', () => {
-  const myElement = document.querySelector('.search_bar_contain sdf');
+//   if (!myElement) return;
 
-  if (window.scrollY > lastScrollY) {
-    // user scrolling down → hide
-    myElement.classList.add('active');
-  } else {
-    // user scrolling up → show
-    myElement.classList.remove('active');
-  }
+//   // Scroll Down (only hide if passed 25px)
+//   if (window.scrollY > lastScrollY && window.scrollY > 25) {
+//     myElement.classList.add("active");
+//   } 
+//   // Scroll Up → show
+//   else if (window.scrollY < lastScrollY) {
+//     myElement.classList.remove("active");
+//   }
 
-  lastScrollY = window.scrollY; // update last position
-});
+//   lastScrollY = window.scrollY;
+// });
+
+ window.addEventListener('scroll', function() {
+                const searchSection = document.querySelector('.search_bar_contain');
+                const crossLine = document.querySelector('.cross-line');
+                const crossLineRect = crossLine.getBoundingClientRect();
+                // console.log(crossLineRect);
+
+                if (crossLineRect.top <= 0) {
+                    searchSection.classList.add('active');
+                    // Add fixed class
+                } else {
+                    searchSection.classList.remove('active');
+                    // Remove fixed class
+                }
+            });
+
 
 
 // category fetch for search bar 

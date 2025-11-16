@@ -495,6 +495,7 @@ const loadBanner = async () => {
           upperHtml += `
                     
                     <div class="shop2" style="width:${width};min-width:${width}">
+                    
                         <div class="shop2-content">
                             <div class="shop2-text ${darkTheme}">
                                 <h1>${item.title}</h1>
@@ -563,7 +564,7 @@ const loadBanner = async () => {
         navText: ["<", ">"],
         responsive: {
           0: { items: 1 },
-          600: { items: 2 },
+          600: { items: 1.3 },
           1000: { items: 3 }, // always show 3 when screen is wide enough
         },
       });
@@ -580,7 +581,7 @@ const loadBanner = async () => {
         navText: ["<", ">"],
         responsive: {
           0: { items: 1.3 },
-          600: { items: 2.5 },
+          600: { items: 1.3 },
           1000: { items: 3 }, // always show 3 when screen is wide enough
         },
       });
@@ -600,6 +601,9 @@ const loadBanner = async () => {
           1000: { items: 3 }, // always show 3 when screen is wide enough
         },
       });
+
+
+      
 
        latestBanner.owlCarousel({
         loop: true,
@@ -856,7 +860,14 @@ async function GetSubCategory(subId) {
       
             <a href="category.html?subCat_id=${item.id}&cate_id=${item.category_id}">
         <img src="${scatei}${item.image_url}" width="80" />
-        <b style="width: max-content;     margin-top: 5px;">${item.name}</b>
+        <b class="cate_name" style="        margin-top: 5px;
+    color: var(--btn-bg-color);
+    background: white;
+    width: min-content;
+    padding-inline: 5%;
+    text-align: center;
+    border-radius: 5px;
+    padding-block: 2%;">${item.name}</b>
         <hr>
         </a>
         </div>
@@ -978,3 +989,29 @@ function fetchRecentlyViewedProducts() {
 fetchRecentlyViewedProducts();
 
 
+let currentIndex = 0;
+
+function autoScrollCards() {
+  const container = document.getElementById("upperBanner");
+  const cards = container.querySelectorAll(".shop2");
+
+  if (cards.length === 0) return;
+
+
+  const cardWidth = cards[0].offsetWidth + 0;
+
+
+  container.scrollTo({
+    left: currentIndex * cardWidth,
+    behavior: "smooth",
+  });
+
+
+  currentIndex++;
+  if (currentIndex >= cards.length) {
+    currentIndex = -1;
+  }
+}
+
+
+setInterval(autoScrollCards, 2000);
