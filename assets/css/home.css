@@ -1848,7 +1848,7 @@ background: radial-gradient(white, #8a1344);
       .Category-box img{
         height: 204px;
         width: 148px;
-        border-radius: 37px;
+        border-radius: 26px;
         object-fit: cover;
         object-position: top;   
                 border: 1px solid gray;
