@@ -1857,7 +1857,7 @@ background: radial-gradient(white, #8a1344);
       .Category-box a{
         height: 100%;
         width: auto;
-        margin-right: 50px;
+        /* margin-right: 50px; */
         position: relative;
       }
 }
