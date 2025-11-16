@@ -24,8 +24,13 @@
     padding: 13px 5%;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
+<<<<<<< HEAD
     position: static;
     top: 6%;
+=======
+    position: sticky;
+    /* top: 6%; */
+>>>>>>> d5d297801a68e16816d20ab25b7d0a0ac5e59e14
         gap: 23px;
     left: 0;
     width: 100%;
@@ -690,6 +695,7 @@ ease forwards;
     /* mobile view search bar */
 
     .search_bar_contain{
+<<<<<<< HEAD
  padding: 18px 2%;
         border-bottom: 1px solid #80808042;
         z-index: 955;
@@ -698,6 +704,17 @@ ease forwards;
         /* position: relative;
         top: 0px; */
   transition: top 0.3s ease;
+=======
+    padding: 18px 2%;
+    /* position: fixed;
+    top: 53px; */
+    border-bottom: 1px solid #80808042;
+    z-index: 955;
+    background: #fff;
+    width: 100%;
+        /* box-shadow: 0 4px 30px 0 rgba(40, 44, 63, .10196078431372549); */
+
+>>>>>>> d5d297801a68e16816d20ab25b7d0a0ac5e59e14
 }
 
 .search_bar{

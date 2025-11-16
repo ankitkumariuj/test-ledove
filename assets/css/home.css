@@ -1553,9 +1553,16 @@ background: radial-gradient(white, #8a1344);
   }
 
   .header {
+<<<<<<< HEAD
           padding-inline: 2%;
     padding-block: 1%;
     margin-top: 15px;
+=======
+            padding-inline: 2%;
+        padding-block: 1%;
+      margin-top: 15px;
+      /* background: red; */
+>>>>>>> d5d297801a68e16816d20ab25b7d0a0ac5e59e14
   }
 
   .categories {
