@@ -703,6 +703,7 @@ display: block;
         z-index: 955;
         background: #fff;
         width: 100%;
+                position: sticky;
         /* position: relative;
         top: 0px; */
   transition: top 0.3s ease;
