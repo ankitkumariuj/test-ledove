@@ -1654,7 +1654,7 @@ background: linear-gradient(transparent, #80808012);
   }
 
   .products{
-        height: 23px;
+        /* height: 23px; */
   }
 
   .product-boxs{
