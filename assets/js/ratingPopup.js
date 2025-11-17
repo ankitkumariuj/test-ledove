@@ -1,18 +1,4 @@
-const warningAlert = (msg) => {
-  Swal.fire({
-    title: "",
-    text: msg,
-    icon: "warning",
-    showConfirmButton: false,
-    customClass: {
-      icon: "swal-custom-icon",
-      htmlContainer: "swal-custom-text",
-      container: "my-swal-warning-container",
-    },
-    timer: 1000,
-  });
 
-}
 // Open rating popup
 function openRatingPopup(pid) {
   const userid = localStorage.getItem('userId');
@@ -59,3 +45,21 @@ $(".open-rating-btn").on("click", function () {
   const pid = $(this).data("pid");
   openRatingPopup(pid);
 });
+
+
+
+// const warningAlert = (msg) => {
+//   Swal.fire({
+//     title: "",
+//     text: msg,
+//     icon: "warning",
+//     showConfirmButton: false,
+//     customClass: {
+//       icon: "swal-custom-icon",
+//       htmlContainer: "swal-custom-text",
+//       container: "my-swal-warning-container",
+//     },
+//     timer: 1000,
+//   });
+
+// }

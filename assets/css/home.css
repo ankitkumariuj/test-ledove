@@ -1,4 +1,28 @@
 
+.product-box{
+  display: none;
+}
+
+.banner_product{
+  display: none;
+}
+
+
+.product-boxs{
+  display: none;
+}
+
+.banner_products{
+  display: none;
+}
+
+.banner_kids{
+  display: none;
+}
+
+.product-kids{
+  display: none;
+}
 
 
 .Category-box{
@@ -1556,11 +1580,11 @@ background: radial-gradient(white, #8a1344);
 
           padding-inline: 2%;
     padding-block: 1%;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 
             padding-inline: 2%;
         padding-block: 1%;
-      margin-top: 15px;
+      /* margin-top: 15px; */
       /* background: red; */
 
   }
@@ -1568,7 +1592,82 @@ background: radial-gradient(white, #8a1344);
   .categories {
     padding-inline: calc(5% - 20px);
   }
+.banner_product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.banner_product button{
+         position: relative;
+        bottom: 80px;
+        padding: 7px;
+        /* background: black; */
+        color: white;
+        width: 83px;
+        border-radius: 7px;
+        border: 1px solid black;
+}
+  .products .img{
+        height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 23px;
+    position: relative;
+  }
+
+  .product-box{
+        display: flex;
+    gap: 10px;
+    overflow: scroll;
+    justify-content: flex-start;
+/* background: linear-gradient(transparent, #8080809c); */
+    position: relative;
+    bottom: 59px;
+    padding: 0px 10px;
+            margin-bottom: -101px;
+  }
+
+  .label-img{
+position: relative;
+       left: 16px;
+        width: 21px;
+        top: -104px;
+                border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+  }
+
+
+
+
+   .product-kids{
+        display: flex;
+    gap: 10px;
+    overflow: scroll;
+    justify-content: flex-start;
+background: linear-gradient(transparent, #80808012);
+    position: relative;
+    bottom: 59px;
+    padding: 0px 10px;
+         margin-bottom: -101px;
+  }
+
+  .products{
+        height: 23px;
+  }
+
+  .product-boxs{
+        display: flex;
+    gap: 10px;
+    overflow: scroll;
+    position: relative;
+/* background: linear-gradient(transparent, #80808012); */
+    bottom: 62px;
+          margin-bottom: -101px;
+    justify-content: flex-start;
+    padding: 0px 10px;
+  }
   .shop2 {
 
     width: 100%;
@@ -1679,6 +1778,8 @@ background: radial-gradient(white, #8a1344);
 .cate_name {
     position: absolute;
     bottom: 6%;
+    font-size: 12px;
+    width: max-content;
 }
 
   /* .tabs::-webkit-scrollbar { 

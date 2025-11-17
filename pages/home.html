@@ -1717,7 +1717,7 @@
 
           <div class="Collection_name" class="Collection_name">Trending Now</div>
      <!-- <h4 style="    padding-inline: 5%; padding-block: 2%; ">Trending Now</h4> -->
-    <div class="owl-carousel" id="trendingBanner"  style="display: block; padding-left: 2px;      padding-block: 34px;   background: var(--btn-bg-color);">
+    <div class="owl-carousel" id="trendingBanner"  style="display: block; padding-inline: 2px;      padding-block: 34px;   background: var(--btn-bg-color);">
   <div><img src="/assets/images/trending 1.avif" alt=""></div>
   <div><img src="/assets/images/trending 2.avif" alt=""></div>
   <div><img src="/assets/images/trending 3.avif" alt=""></div>
@@ -2404,6 +2404,23 @@
 
 </section>
 
+<div class="tabs-container section_tittle_ ">
+      <h2>What's Women Trends</h2>
+    </div>
+
+<div class="banner_product" id="banner_product">
+  <img src="../assets/images/banner center.jpg" style="width: 100%;
+    height: 100%;" id="banner_img" alt="">
+    <button>shop now</button>
+
+</div>
+
+    <div class="product-box">
+      <div class="products">
+        <img src="../assets/images/img1.jpeg" alt="">
+        <p>name</p>
+      </div>
+</div>
 
 
     <!--extra feature html2-->
@@ -2600,6 +2617,26 @@
         </div>
       </div>
     </div>
+
+
+
+    <div class="tabs-container section_tittle_ ">
+      <h2>What's Men Trends</h2>
+    </div>
+
+<div class="banner_product" id="banner_products">
+  <img src="../assets/images/banner center.jpg" style="width: 100%;
+    height: 100%;" id="banner_img" alt="">
+    <button>shop now</button>
+
+</div>
+
+    <div class="product-boxs" >
+      <div class="products">
+        <img src="../assets/images/img1.jpeg" alt="">
+        <p>name</p>
+      </div>
+</div>
 
     <div class="tabs-container" id="tab-container-1">
       <h2>Shirts</h2>
@@ -2892,7 +2929,7 @@
       </div>
     </section>
     <h4 class="Collection_name">Latest Collection</h4>
-    <div class="owl-carousel" style="display: block;" id="latestBanner">
+    <div class="owl-carousel" style="display: block; padding: 0px 2%;" id="latestBanner">
   <div><img src="/assets/images/banner_men home" alt=""></div>
   <div><img src="/assets/images/banner_men home_1.avif" alt=""></div>
   <div><img src="/assets/images/banner_men home_2.avif" alt=""></div>
@@ -3097,7 +3134,7 @@
 
 
     <h4 class="Collection_name">Kids Collection</h4>
-    <div class="owl-carousel" style="display: block;" id="kidsBanner">
+    <div class="owl-carousel" style="display: block;  padding: 0px 2%;" id="kidsBanner">
   <div><img src="/backend/dashboard/backendapi/newapi/images/product/main/PD25100405202668e10a023dd14.jpg" alt=""></div>
   <div><img src="/backend/dashboard/backendapi/newapi/images/product/main/PD25100403364168e0f1b1b24ba.jpg" alt=""></div>
   <div><img src="/backend/dashboard/backendapi/newapi/images/product/main/PD25100403252168e0ef09e7377.jpg" alt=""></div>
@@ -3306,7 +3343,23 @@
     </section>
 
 
+    <div class="tabs-container section_tittle_ ">
+      <h2>What's Kids Trends</h2>
+    </div>
 
+<div class="banner_product" id="banner_kids">
+  <img src="../assets/images/banner center.jpg" style="width: 100%;
+    height: 100%;" id="banner_img" alt="">
+    <button>shop now</button>
+
+</div>
+
+    <div class="product-kids" >
+      <div class="products">
+        <img src="../assets/images/img1.jpeg" alt="">
+        <p>name</p>
+      </div>
+</div>
     
 
     <!-- support section  -->
@@ -3617,11 +3670,16 @@
 
         try {
           await loadBanner();
-                // await loadProductsByCategory();
+          await fetchTodayBestDeal();
           await loadProductCart();
           await fetchCategory();
-          await fetchTodayBestDeal();
           await fetchCategoryPriority();
+           loadProductsByCategory();
+           await loadProductsByCategorys();
+           await banner();
+           await banners();
+           await bannerkids();
+           await loadProductsByCategorykids();
         } catch (error) {
           console.error("Error loading data:", error);
         } finally {

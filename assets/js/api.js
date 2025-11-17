@@ -10,7 +10,8 @@ const loadProductCart = async () => {
     method: "POST",
     data: { type: "loadProductCart", userId: userId },
     success: function (response) {
-      console.log(response.brand)
+      
+      console.log(response)
       if (response.status !== false) {
         currentData = response;
         renderBestSellerProducts(response);

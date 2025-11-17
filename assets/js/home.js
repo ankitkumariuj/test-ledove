@@ -382,7 +382,7 @@ const loadBanner = async () => {
   const latestBanner = $("#latestBanner");
   const trendingbanner = $('#trendingBanner');
   const kidsbanner = $('#kidsBanner');
-
+const collectionname= $('.Collection_name');
   await $.ajax({
     url: API_URL,
     type: "POST",
@@ -395,7 +395,8 @@ const loadBanner = async () => {
         let latestData = response.filter((item) => item.banner_type === 'Latest');
         let trendingData = response.filter((item) => item.banner_type === 'Trending');
                 let kidsData = response.filter((item) => item.banner_type === 'Kids Collection');
-        console.log(kidsData)
+                  $(".Collection_name").text(response.banner_type);
+        console.log("banner name " + response[0].banner_type);
 
         let bannerData = "";
         let upperHtml = "";
@@ -455,6 +456,7 @@ const loadBanner = async () => {
                         </div>
                     </div>
                     `;
+                     
         });
         trendingbanner.html(trendingHtml);
 
@@ -863,7 +865,7 @@ async function GetSubCategory(subId) {
         <b class="cate_name" style="        margin-top: 5px;
     color: var(--btn-bg-color);
     background: white;
-    width: min-content;
+    
     padding-inline: 5%;
     text-align: center;
     border-radius: 5px;
@@ -1015,3 +1017,204 @@ function autoScrollCards() {
 
 
 setInterval(autoScrollCards, 2000);
+
+function banner() {
+  const banner_product = $('#banner_product');
+
+  $.ajax({
+    url: API_URL,
+    type: "POST",
+    data: { type: "loadBanner" },
+
+    success: function (response) {
+      console.log(response[9].image_url);
+
+      if (response && response[9]) {
+        let html = "";
+
+        html += `
+          <img src="${image_url}/banner/${response[9].image_url}" alt="Banner Image" height= '100%' width='100%' />
+          <button><a href="../pages/category.html"> Shop now </a></button>
+        `;
+
+        banner_product.html(html);
+      } else {
+        console.log("Banner not found!");
+      }
+    }
+  });
+}
+
+
+function loadProductsByCategory( cat_id) {
+  console.log("Loading category:",  cat_id);
+  const products= $('.product-box');
+
+  $.ajax({
+    url: API_URL,
+    type: "POST",
+    data: { type: "loadProductsByCategory",  cat_id: '22', },
+    success: function (response) {
+      console.log("Category Products:", response);
+let html = "";
+        response.map((item) => {
+          html+= `
+                <div class = "products">
+                <a class="product-img" href="singleproduct.html?pid=${item.id}"onclick="saveProductName('${item.name}')" >
+              <img src="${image_url + "/product/main/" + item.main_image}" alt="" class="img">
+                             <img src="../assets/images/Rectangle.png" class='label-img'>
+                                     <p style="     position: absolute;
+    top: 0px;
+    margin-left: 15px;
+    width: 22px;
+        font-weight: 700;
+    font-size: 10px;
+
+    text-align: center;">${Math.round(((item.mrp - item.selling_price) / item.mrp) * 100)} OFF</p>
+            </a>
+           
+            </div>
+          `;
+        })
+        products.html(html);
+    }
+
+       
+  });
+}
+
+
+
+    function banners() {
+  const banner_products = $('#banner_products');
+
+  $.ajax({
+    url: API_URL,
+    type: "POST",
+    data: { type: "loadBanner" },
+
+    success: function (response) {
+      console.log(response[10].image_url);
+
+      if (response && response[10]) {
+        let html = "";
+
+        html += `
+          <img src="${image_url}/banner/${response[10].image_url}" alt="Banner Image" height= '100%' width='100%' />
+          <button><a href="../pages/category.html"> Shop now </a></button>
+        `;
+
+        banner_products.html(html);
+      } else {
+        console.log("Banner not found!");
+      }
+    }
+  });
+}
+
+
+function loadProductsByCategorys( cat_id) {
+  console.log("Loading category:",  cat_id);
+  const products= $('.product-boxs');
+
+  $.ajax({
+    url: API_URL,
+    type: "POST",
+    data: { type: "loadProductsByCategory",  cat_id: '1', },
+    success: function (response) {
+      console.log("Category Products:", response);
+let html = "";
+        response.map((item) => {
+          html+= `
+                <div class = "products">
+                <a class="product-img" href="singleproduct.html?pid=${item.id}"onclick="saveProductName('${item.name}')" >
+              <img src="${image_url + "/product/main/" + item.main_image}" alt="" class="img">
+               <img src="../assets/images/Rectangle.png" class='label-img'>
+                         <p style="     position: absolute;
+    top: 0px;
+    margin-left: 15px;
+    width: 22px;
+        font-weight: 700;
+    font-size: 10px;
+
+    text-align: center;">${Math.round(((item.mrp - item.selling_price) / item.mrp) * 100)} OFF</p>
+            </a>
+           
+            </div>
+          `;
+        })
+        products.html(html);
+    }
+
+       
+  });
+}
+
+
+
+
+function bannerkids() {
+  const banner_kids = $('#banner_kids');
+
+  $.ajax({
+    url: API_URL,
+    type: "POST",
+    data: { type: "loadBanner" },
+
+    success: function (response) {
+      console.log(response[13].image_url);
+
+      if (response && response[13]) {
+        let html = "";
+
+        html += `
+          <img src="${image_url}/banner/${response[13].image_url}" alt="Banner Image" height= '100%' width='100%'  class="img"/>
+           
+          <button><a href="../pages/category.html"> Shop now </a></button>
+        `;
+
+        banner_kids.html(html);
+      } else {
+        console.log("Banner not found!");
+      }
+    }
+  });
+}
+
+
+function loadProductsByCategorykids( cat_id) {
+  console.log("Loading category:",  cat_id);
+  const productskids= $('.product-kids');
+
+  $.ajax({
+    url: API_URL,
+    type: "POST",
+    data: { type: "loadProductsByCategory",  cat_id: '4', },
+    success: function (response) {
+      console.log("Category Products:", response);
+let html = "";
+        response.map((item) => {
+          html+= `
+                <div class = "products">
+                <a class="product-img" href="singleproduct.html?pid=${item.id}"onclick="saveProductName('${item.name}')" >
+              <img src="${image_url + "/product/main/" + item.main_image}" alt="" class="img">
+              <img src="../assets/images/Rectangle.png" class='label-img'>
+                <p style="     position: absolute;
+    top: 0px;
+    margin-left: 15px;
+    width: 22px;
+        font-weight: 700;
+    font-size: 10px;
+
+    text-align: center;">${Math.round(((item.mrp - item.selling_price) / item.mrp) * 100)} OFF</p>
+              </a>
+           
+            </div>
+          `;
+        })
+        productskids.html(html);
+    }
+
+       
+  });
+}
