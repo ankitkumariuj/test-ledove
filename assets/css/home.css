@@ -1,4 +1,15 @@
-
+.toprated{
+      background: white;
+    position: absolute;
+    bottom: 39%;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 3%;
+    border-radius: 5px;
+    color: var(--main-clr);
+}
 .product-box{
   display: none;
 }
@@ -917,6 +928,7 @@ transform: translateX(100px);
 
 .product-img {
   width: 100%;
+  /* position: relative; */
 }
 
 .discount-label {
@@ -1615,6 +1627,7 @@ background: radial-gradient(white, #8a1344);
     object-fit: cover;
     border-radius: 23px;
     position: relative;
+    border: 1px solid gray;
   }
 
   .product-box{
@@ -1625,16 +1638,19 @@ background: radial-gradient(white, #8a1344);
 /* background: linear-gradient(transparent, #8080809c); */
     position: relative;
     bottom: 59px;
+            height: 22%;
     padding: 0px 10px;
             margin-bottom: -101px;
   }
 
   .label-img{
-position: relative;
-       left: 16px;
+        position: absolute;
+        /* left: 16px; */
+                margin-left: -84px;
         width: 21px;
-        top: -104px;
-                border-top-right-radius: 3px;
+        /* bottom: 227%; */
+        top: 0%;
+        border-top-right-radius: 3px;
         border-top-left-radius: 3px;
   }
 
@@ -1651,10 +1667,11 @@ background: linear-gradient(transparent, #80808012);
     bottom: 59px;
     padding: 0px 10px;
          margin-bottom: -101px;
+                 height: 22%;
   }
 
   .products{
-        height: 23px;
+        height: 100%;
   }
 
   .product-boxs{
@@ -1667,6 +1684,7 @@ background: linear-gradient(transparent, #80808012);
           margin-bottom: -101px;
     justify-content: flex-start;
     padding: 0px 10px;
+            height: 22%;
   }
   .shop2 {
 
@@ -1691,6 +1709,11 @@ background: linear-gradient(transparent, #80808012);
 
 .owl-carousel .owl-item img{
       height: 100vw;
+}
+
+.toprated{
+  bottom: 32%;
+          font-size: 12px;
 }
 
 }

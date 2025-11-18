@@ -1,3 +1,9 @@
+window.addEventListener("load", () => {
+    if (document.activeElement === searchInput2) {
+        searchPopup2.style.display = "block";
+        updateResults(searchInput2.value);
+    }
+});
 
 
 
@@ -13,19 +19,19 @@ fetch(API_URL + "?type=searchProducts")
 const searchInput2 = document.getElementById("search-inputs");
 const searchPopup2 = document.getElementById("search-popups");
 const resultsList2 = document.getElementById("search-results-lists");
+searchPopup2.style.display = "block";
+// // Show popup on input focus
+// searchInput2.addEventListener("autofocus", () => {
+//   searchPopup2.style.display = "block";
+//   updateResults("");
+// });
 
-// Show popup on input focus
-searchInput2.addEventListener("focus", () => {
-  searchPopup2.style.display = "block";
-  updateResults("");
-});
-
-// Hide popup when clicking outside
-document.addEventListener("click", (e) => {
-  if (!e.target.closest("#search-popups") && !e.target.closest("#search-inputs")) {
-    searchPopup2.style.display = "none";
-  }
-});
+// // Hide popup when clicking outside
+// document.addEventListener("click", (e) => {
+//   if (!e.target.closest("#search-popups") && !e.target.closest("#search-inputs")) {
+//     searchPopup2.style.display = "none";
+//   }
+// });
 
 // Update results on input
 searchInput2.addEventListener("input", () => {

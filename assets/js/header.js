@@ -160,22 +160,37 @@ async function GetMainCategory() {
 //   lastScrollY = window.scrollY;
 // });
 
- window.addEventListener('scroll', function() {
-                const searchSection = document.querySelector('.search_bar_contain');
-                const crossLine = document.querySelector('.cross-line');
-                const crossLineRect = crossLine.getBoundingClientRect();
-                // console.log(crossLineRect);
+//  window.addEventListener('scroll', function() {
+//                 const searchSection = document.querySelector('.search_bar_contain');
+//                 const crossLine = document.querySelector('.cross-line');
+//                 const crossLineRect = crossLine.getBoundingClientRect();
+//                 // console.log(crossLineRect);
 
-                if (crossLineRect.top <= 0) {
-                    searchSection.classList.add('active');
-                    // Add fixed class
-                } else {
-                    searchSection.classList.remove('active');
-                    // Remove fixed class
-                }
-            });
+//                 if (crossLineRect.top < 0) {
+//                     searchSection.classList.add('active');
+//                     // Add fixed class
+//                 } else {
+//                     searchSection.classList.remove('active');
+//                     // Remove fixed class
+//                 }
+//             });
 
+window.addEventListener('scroll', function () {
+    const searchSection = document.querySelector('.search_bar_contain');
+    const crossLine = document.querySelector('.cross-line');
+    
+    // Scroll Y position
+    const scrollTop = window.scrollY;
 
+    // cross-line ka actual top position page se
+    const crossLineTop = crossLine.offsetTop;
+
+    if (scrollTop >= crossLineTop) {
+        searchSection.classList.add('active');
+    } else {
+        searchSection.classList.remove('active');
+    }
+});
 
 // category fetch for search bar 
 const searchcategorys = () => {

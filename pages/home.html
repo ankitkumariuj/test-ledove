@@ -159,7 +159,7 @@
       </div>
       </div>
 
-<div class="search_bar_contain active">
+<div class="search_bar_contain">
   <div class="search_bar">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="#686B77" class="search-bar-icon"><g fill="none" fill-rule="evenodd"><path fill="#686B77" d="M3.438 9.754a6.415 6.415 0 016.408-6.409 6.415 6.415 0 016.409 6.409 6.416 6.416 0 01-6.409 6.408 6.416 6.416 0 01-6.408-6.408M21.816 20.87l-5.974-6.02a7.839 7.839 0 001.88-5.097c0-4.343-3.534-7.875-7.876-7.875-4.342 0-7.875 3.532-7.875 7.875 0 4.342 3.533 7.875 7.875 7.875a7.837 7.837 0 004.946-1.753l5.983 6.029a.73.73 0 001.037.004.733.733 0 00.004-1.038"></path><path d="M0 0h24v24H0z" opacity="0.05"></path></g></svg>
 <div class="text-container">
@@ -1022,7 +1022,7 @@
 
 
 
-    <div class="cross-line"></div>
+    
 
     <section id="slider-img" class="slider-container">
       <div class="owl-carousel owl-theme" id="main_banner_carousel">
@@ -1054,7 +1054,7 @@
     </section>
 
 <!-- <img src="../assets/images/img1.jpeg" alt="" class="mobile-top-img"> -->
-
+<div class="cross-line"></div>
     <div id="today-best-deal-section">
       <div class="deal-header">
         <div
@@ -2282,10 +2282,121 @@
     
     
     
+     <div class="tabs-container title-sections" >
+      <h2>Our Top Rated Product</h2>
+    </div>
     
     
+        <!--extra features html 1-->
+ <section class="product-section" id="topratedproduct">
+
+  <!-- Example Product -->
+  <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
     
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+    <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
     
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+    <div class="product">
+    <img src="../assets/images/C731_T-GREEN_1.webp" alt="Mens Cotton Striped Shirt" />
+    
+    <div class="discount-label">24%</div>
+    <p>Casual</p>
+    <h2>Mens Cotton Striped Shirt<br>Fit Casual Shirt</h2>
+
+    <!-- Optional Star Ratings -->
+    <div class="star-rating">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <div class="price-container">
+      <span class="old-price">₹699.00</span>
+      <span class="new-price">₹599.00</span>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon-with-label">
+        <i class="fas fa-eye"></i>
+        <span class="icon-label">View Product</span>
+      </div>
+      <div class="icon-with-label">
+        <i class="fas fa-heart"></i>
+        <span class="icon-label">Visit Wishlist</span>
+      </div>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
+</section>
+    
+
     
     
     
@@ -3677,6 +3788,7 @@
            loadProductsByCategory();
            await loadProductsByCategorys();
            await banner();
+           await fetchProductRating();
            await banners();
            await bannerkids();
            await loadProductsByCategorykids();
