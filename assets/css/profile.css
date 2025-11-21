@@ -275,6 +275,10 @@
         max-width: 450px;
     }
 
+    #page_title{
+        display: none;
+    }
+
     
  }
 
@@ -283,7 +287,23 @@
     .marginTop{
         margin-top: 80px;
     }
+.logo img{
+    display: none;
+}
+.logo{
+    margin: 0px;
+}
 
+.page_title{
+    display: flex;
+}
+#phone_hide{
+    display: none;
+}
+
+.icon-btn {
+    display: none;
+}
     .profile-title h3{
         font-size: var(--txt-font-mobile);
     }

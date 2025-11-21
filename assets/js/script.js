@@ -31,6 +31,9 @@ function openModal() {
     location.href = "profile.html";
     return;
   }
+  else{
+    location.href= 'login.html';
+  }
 
   closeLoginModalWrapper.classList.add("active");
   loginModal.classList.add("active");

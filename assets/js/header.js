@@ -141,56 +141,42 @@ async function GetMainCategory() {
 }
 
 
-// let lastScrollY = window.scrollY;
 
-// window.addEventListener("scroll", () => {
-//   const myElement = document.querySelector(".search_bar_contain");
 
-//   if (!myElement) return;
+//  window.addEventListener('scroll', function () {
+//     const searchSection = document.querySelector('.search_bar_contain');
+//     const crossLine = document.querySelector('.cross-line');
+    
+//     // Scroll Y position
+//     const scrollTop = window.scrollY;
 
-//   // Scroll Down (only hide if passed 25px)
-//   if (window.scrollY > lastScrollY && window.scrollY > 25) {
-//     myElement.classList.add("active");
-//   } 
-//   // Scroll Up → show
-//   else if (window.scrollY < lastScrollY) {
-//     myElement.classList.remove("active");
-//   }
+//     // cross-line ka actual top position page se
+//     const crossLineTop = crossLine.offsetTop;
 
-//   lastScrollY = window.scrollY;
+//     if (scrollTop >= crossLineTop) {
+//         searchSection.classList.add('active');
+//     } else {
+//         searchSection.classList.remove('active');
+//     }
 // });
 
-//  window.addEventListener('scroll', function() {
-//                 const searchSection = document.querySelector('.search_bar_contain');
-//                 const crossLine = document.querySelector('.cross-line');
-//                 const crossLineRect = crossLine.getBoundingClientRect();
-//                 // console.log(crossLineRect);
 
-//                 if (crossLineRect.top < 0) {
-//                     searchSection.classList.add('active');
-//                     // Add fixed class
-//                 } else {
-//                     searchSection.classList.remove('active');
-//                     // Remove fixed class
-//                 }
-//             });
-
-window.addEventListener('scroll', function () {
-    const searchSection = document.querySelector('.search_bar_contain');
-    const crossLine = document.querySelector('.cross-line');
+// window.addEventListener('scroll', function () {
+//     const searchSection = document.querySelector('.search_bar_contain');
+//     const crossLine = document.querySelector('.cross-line');
     
-    // Scroll Y position
-    const scrollTop = window.scrollY;
+//     // Scroll Y position
+//     const scrollTop = window.scrollY;
 
-    // cross-line ka actual top position page se
-    const crossLineTop = crossLine.offsetTop;
+//     // cross-line ka actual top position page se
+//     const crossLineTop = crossLine.offsetTop;
 
-    if (scrollTop >= crossLineTop) {
-        searchSection.classList.add('active');
-    } else {
-        searchSection.classList.remove('active');
-    }
-});
+//     if (scrollTop >= crossLineTop) {
+//         searchSection.classList.add('active');
+//     } else {
+//         searchSection.classList.remove('active');
+//     }
+// });
 
 // category fetch for search bar 
 const searchcategorys = () => {

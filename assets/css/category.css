@@ -813,7 +813,7 @@ form textarea {
     padding-inline: 5%;
   }
   .marginTop {
-    margin-top: 64px;
+    margin-top: 84px;
 }
 
 .main-container{
@@ -880,6 +880,11 @@ form textarea {
     width: 90%;   /* almost full width */
     left: 5%;     /* center it */
     right: 5%;
+  }
+
+
+  .logo img{
+    display: none;
   }
 
    .icon-container {

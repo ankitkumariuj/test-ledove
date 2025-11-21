@@ -1035,7 +1035,7 @@ function fetchRecentlyViewedProducts() {
         //   iconLabel = "Add To Wishlist";
         // }
         html += `
-           <div class="product">
+           <div class="product" style="margin-bottom: 51px;">
             <a class="product-img" href="singleproduct.html?pid=${item.id}"onclick="saveProductName('${item.name}')" >
               <img src="${image_url + "/product/main/" + item.main_image}" alt="">
             </a>

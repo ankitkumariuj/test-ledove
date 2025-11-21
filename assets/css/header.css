@@ -561,7 +561,7 @@ ease forwards;
     padding-left: 165px;
     background-color: #f2f2f2;
     vertical-align: middle;
-    display: none;
+    /* display: none; */
 }
 
 .search-input:focus {
@@ -703,8 +703,9 @@ display: block;
         z-index: 955;
         background: #fff;
         width: 100%;
-        /* position: relative;
-        top: 0px; */
+                position: fixed;
+        /* position: relative;*/
+                top: 9%;
   transition: top 0.3s ease;
 
     padding: 18px 2%;
@@ -767,14 +768,12 @@ ease-in;
 }
 
 .delivery_headers{
-
-        display: flex
-;
+        display: flex;
         padding-block: 3%;
         padding-inline: 3%;
         justify-content: space-between;
         align-items: center;
-        /* margin-top: 34%; */
+        margin-top: 41%;
         border-bottom: 0.5px solid #8080801f;
 }
 
@@ -933,7 +932,7 @@ margin-top: 10px;
     .header {
         padding-inline: 5%;
         top: 0%;
-        position: relative;
+        position: fixed;
                 padding-block: 0px;
                 height: 100%;
     }

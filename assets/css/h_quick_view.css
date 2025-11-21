@@ -301,7 +301,7 @@
         bottom: 0%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-      animation: slideUp 0.6s ease-in-out forwards;
+      animation: slideUp 0.3s ease-in-out forwards;
     }
 
 

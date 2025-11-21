@@ -86,7 +86,7 @@
   padding: 0px 0;
   /* background: #f8f8f8; */
   position: relative;
-      margin-top: 100px;
+      margin-top: 127px;
 }
 
 .subcat_box img{
@@ -1594,7 +1594,7 @@ background: radial-gradient(white, #8a1344);
     padding-block: 1%;
     /* margin-top: 15px; */
 
-            padding-inline: 2%;
+            padding-inline: 3%;
         padding-block: 1%;
       /* margin-top: 15px; */
       /* background: red; */
@@ -1671,7 +1671,10 @@ background: linear-gradient(transparent, #80808012);
   }
 
   .products{
+
         height: 100%;
+        /* height: 23px; */
+
   }
 
   .product-boxs{
@@ -1803,6 +1806,7 @@ background: linear-gradient(transparent, #80808012);
     bottom: 6%;
     font-size: 12px;
     width: max-content;
+    text-transform: capitalize;
 }
 
   /* .tabs::-webkit-scrollbar { 
