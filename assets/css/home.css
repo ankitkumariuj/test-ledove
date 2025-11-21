@@ -1535,7 +1535,7 @@ transform: translateX(100px);
 .filter_box{
       
 background: radial-gradient(white, #8a1344);
-    padding: 26px;
+    padding: calc(4% + 3vw);   
     display: flex
 ;
     border-radius: 10px;

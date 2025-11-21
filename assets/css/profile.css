@@ -291,7 +291,7 @@
     display: none;
 }
 .logo{
-    margin: 0px;
+margin: 0px !important;
 }
 
 .page_title{

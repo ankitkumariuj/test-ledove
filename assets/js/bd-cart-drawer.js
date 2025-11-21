@@ -38,7 +38,7 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
     }
 
     updateCartDrawer();
-    // openCart();
+    openCart();
   });
 });
 
@@ -139,7 +139,7 @@ const addToCartProcess = (itemId, vid = null, btn = null) => {
     return;
   }
 
-  setTimeout(() => openCart(), 1000);
+  setTimeout(() => openCart(), 100);
 
   let idfr = window.localStorage.getItem("idfr");
   if (!idfr) {
