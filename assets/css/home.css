@@ -32,9 +32,7 @@
 }
 
 .upper{
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  display: none;
 }
 
 .cate_filter p{
@@ -1610,6 +1608,12 @@ background: radial-gradient(white, #8a1344);
   /* gap: 15px; */
   padding-inline: 3%;
         margin-bottom: 20px;
+}
+
+.upper{
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .budgets_text{
