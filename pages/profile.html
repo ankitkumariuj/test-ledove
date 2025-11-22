@@ -41,10 +41,12 @@
 
   <body>
     <div class="wrapper-overlay"></div>
-<!-- <div class="loader">
+
+
+    <div class="loader">
       <img src="../assets/images/logo.png" class="loader-logo" />
       <p>Fetching the latest trends...</p>
-    </div> -->
+    </div>
 
     <!-- ========= header part start here ============== -->
 
@@ -1126,15 +1128,61 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/header.js"></script>
     <script src="../assets/js/login.js"></script>
     <script src="../assets/js/api.js"></script>
     <script src="../assets/js/profile.js"></script>
     <script src="../assets/js/bd-cart-drawer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-            $(document).ready(function (){
-            searchcategory();
-        });
-    </script>
+      async function initializeApp() {
+        $(".loader").show().fadeIn(300);
+
+        try {
+          await loadBanner();
+          await fetchTodayBestDeal();
+          await loadProductCart();
+          await fetchCategory();
+          await fetchCategoryPriority();
+           loadProductsByCategory();
+           await loadProductsByCategorys();
+           await banner();
+           await fetchProductRating();
+           await banners();
+           await bannerkids();
+           await loadProductsByCategorykids();
+        } catch (error) {
+          console.error("Error loading data:", error);
+        } finally {
+          $(".loader").fadeOut(300); // Hide the loader after everything
+        }
+      }
+
+      $(document).ready(function () {
+        initializeApp();
+         searchcategory();
+      });
+
+// ✅ Run automatically when the home page loads
+$(document).ready(function () {
+  fetchUserData();
+});
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,            // infinite loop
+    margin: 10 ,            // gap between items
+    nav: false,             // next/prev buttons
+    autoplay: true,        // auto scroll
+    autoplayTimeout: 3000, // delay between scrolls
+    responsive: {
+      0: { items: 1 },     // mobile view
+      700: { items: 2 },   // tablet view
+      1000: { items: 3 }   // desktop view
+    }
+  });
+});
+</script>
   </body>
 </html>

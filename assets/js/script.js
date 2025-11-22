@@ -114,10 +114,8 @@ window.onclick = function (event) {
   }
 };
 
-$(".hamberger-menu-icon").click(() => {
-  $(".menu-sidebar-container").addClass("active");
-  $(".wrapper-overlay").addClass("active");
-  $("body").css("overflow", "hidden");
+$(".hamberger-menu-icon" && ".upper").click(() => {
+  location.href='../pages/profile.html'
 });
 
 $(".close-menu-sidebar , .wrapper-overlay").click(() => {

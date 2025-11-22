@@ -20,6 +20,7 @@ const searchInput2 = document.getElementById("search-inputs");
 const searchPopup2 = document.getElementById("search-popups");
 const resultsList2 = document.getElementById("search-results-lists");
 searchPopup2.style.display = "block";
+searchPopup2.style.height= '100%';
 // // Show popup on input focus
 // searchInput2.addEventListener("autofocus", () => {
 //   searchPopup2.style.display = "block";
@@ -36,7 +37,7 @@ searchPopup2.style.display = "block";
 // Update results on input
 searchInput2.addEventListener("input", () => {
   const query = searchInput2.value.trim().toLowerCase();
-  updateResults(query);
+  updateResults(query) ;
 });
 
 function updateResults(query) {
@@ -47,7 +48,7 @@ function updateResults(query) {
   resultsList2.innerHTML = "";
 
   if (filtered.length === 0) {
-    resultsList2.innerHTML = "<li>No products found</li>";
+    resultsList2.innerHTML = "<li></li>";
     return;
   }
 

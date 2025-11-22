@@ -49,7 +49,7 @@
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .logo img {
@@ -956,7 +956,7 @@ margin-top: 10px;
     }
 
     .logo img {
-        transform: translateX(50%);
+        /* transform: translateX(50%); */
     }
 
     .menu-sidebar-container {

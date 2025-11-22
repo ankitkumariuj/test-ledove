@@ -31,6 +31,12 @@
 
 }
 
+.upper{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .cate_filter p{
     font-size: 14px;
     display: -webkit-box;
