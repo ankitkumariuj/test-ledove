@@ -20,6 +20,7 @@ const searchInput2 = document.getElementById("search-inputs");
 const searchPopup2 = document.getElementById("search-popups");
 const resultsList2 = document.getElementById("search-results-lists");
 searchPopup2.style.display = "block";
+searchPopup2.style.height= '100%';
 // // Show popup on input focus
 // searchInput2.addEventListener("autofocus", () => {
 //   searchPopup2.style.display = "block";
