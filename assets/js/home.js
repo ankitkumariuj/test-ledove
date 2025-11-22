@@ -254,6 +254,58 @@ $(document).ready(() => {
 });
 
 
+
+const flitercat = async () => {
+  const topfetchCategories = $(".filter");
+
+
+  $.ajax({
+    url: API_URL,
+    method: "POST",
+    data: { type: "fetchCategory" },
+    success: function (response) {
+      // console.log("Raw Response:", response);
+
+      
+
+
+    if (response.status !== false && Array.isArray(response)) {
+        let categoryItemHtml = "";
+
+        // ✅ Limit to only first 20 categories
+        const categories = response;
+
+        categories.forEach((item) => {
+          categoryItemHtml += `
+            <a href="category.html?cat_id=${item.id}" class="cate_filter">
+
+              <p>${item.name}</p>
+              <span>
+              <span style="text-transform: uppercase;
+    font-size: 12px;     color: brown;">Statring</span>
+              <h5><span>₹</span><span style="    font-size: 18px;">499</span></h5>
+              </span>
+            </a>
+          `;
+        });
+        topfetchCategories.html(categoryItemHtml);
+      } else {
+        topfetchCategories.html("<p>No categories found</p>");
+      }
+    },
+    error: function (xhr, status, error) {
+      console.error("Error loading categories:", error);
+      topfetchCategories.html("<p>Failed to load categories</p>");
+    }
+  });
+};
+
+// call function when page loads
+$(document).ready(() => {
+  flitercat();
+});
+
+
 const fetchTodayBestDeal = () => {
   const todayBestDealProductContainer = $("#todayBestDeal");
   let userId = localStorage.getItem('userId')

@@ -1,7 +1,7 @@
 .toprated{
       background: white;
     position: absolute;
-    bottom: 39%;
+    bottom: 42%;
     padding: 5px;
     display: flex;
     gap: 5px;
@@ -10,6 +10,41 @@
     border-radius: 5px;
     color: var(--main-clr);
 }
+.filter{
+  display: flex;
+  gap: 10px;
+    padding: 2% 5%;
+  overflow: scroll;
+}
+.cate_filter{
+         background: radial-gradient(white, #8a1344);
+    width: 100%;
+    /* aspect-ratio: 1 / 1; */
+    /* object-fit: cover; */
+    /* border-radius: 20px; */
+    border-radius: 15px;
+    margin-right: 8px;
+    /* display: flex; */
+    padding: 21px;
+    /* max-width: 112px; */
+    /* gap: 10px; */
+
+}
+
+.cate_filter p{
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cate_filter h5{
+  color: brown;
+  text-align: center;
+}
+
 .product-box{
   display: none;
 }
@@ -18,7 +53,9 @@
   display: none;
 }
 
-
+.btn-primary {
+  display: none !important;
+}
 .product-boxs{
   display: none;
 }
@@ -1535,7 +1572,7 @@ transform: translateX(100px);
 .filter_box{
       
 background: radial-gradient(white, #8a1344);
-    padding: calc(4% + 3vw);   
+    padding: 36px;   
     display: flex
 ;
     border-radius: 10px;
@@ -1557,6 +1594,7 @@ background: radial-gradient(white, #8a1344);
   color: brown;
     font-weight: 900;
             font-family: var(--font-fm2);
+            width: max-content;
 }
 
 @media (max-width: 1080px) {
@@ -1574,7 +1612,17 @@ background: radial-gradient(white, #8a1344);
           font-family: var(--font-fm2);
           padding: 5%;
 }
-
+.filter_box{
+      
+background: radial-gradient(white, #8a1344);
+    padding: calc(4% + 3.5vw);   
+    display: flex
+;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
   .add-to-cart {
     transform: translateY(0);
@@ -1644,14 +1692,15 @@ background: radial-gradient(white, #8a1344);
   }
 
   .label-img{
-        position: absolute;
+               position: absolute;
         /* left: 16px; */
-                margin-left: -84px;
-        width: 21px;
+        margin-left: -85px;
+        width: 23px;
         /* bottom: 227%; */
         top: 0%;
         border-top-right-radius: 3px;
         border-top-left-radius: 3px;
+        height: 36px;
   }
 
 
@@ -1666,7 +1715,7 @@ background: linear-gradient(transparent, #80808012);
     position: relative;
     bottom: 59px;
     padding: 0px 10px;
-         margin-bottom: -101px;
+           margin-bottom: -50px;
                  height: 22%;
   }
 
