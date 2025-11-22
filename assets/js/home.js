@@ -1385,12 +1385,3 @@ fetchProductRating();
 
 
 
-const fullName = localStorage.getItem("name"); 
-
-if (fullName) {
-   
-    const firstName = fullName.split(' ')[0]; 
-    
-    
-    $("#full_name").html(firstName);
-}

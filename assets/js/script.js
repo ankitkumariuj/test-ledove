@@ -93,6 +93,10 @@ function closeSearch() {
   document.querySelector(".search_wrapper_overlay").classList.remove("active");
 }
 
+$('#icon-btn').click(function(){
+  location.href="../pages/search.html"
+})
+
 $(".k_eye_icon").click(function () {
   const input = $("#login_password_input");
   const icon = $(this).find("i");
@@ -114,8 +118,10 @@ window.onclick = function (event) {
   }
 };
 
-$(".hamberger-menu-icon" && ".upper").click(() => {
-  location.href='../pages/profile.html'
+$(".hamberger-menu-icon").click(() => {
+  $(".menu-sidebar-container").addClass("active");
+  $(".wrapper-overlay").addClass("active");
+  $("body").css("overflow", "hidden");
 });
 
 $(".close-menu-sidebar , .wrapper-overlay").click(() => {

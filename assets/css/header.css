@@ -930,7 +930,7 @@ margin-top: 10px;
 @media (max-width:1080px) {
 
     .header {
-        padding-inline: 5%;
+        padding-inline: 3%;
         top: 0%;
         position: fixed;
                 padding-block: 0px;

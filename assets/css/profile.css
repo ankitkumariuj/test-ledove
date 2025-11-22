@@ -301,9 +301,9 @@ margin: 0px !important;
     display: none;
 }
 
-.icon-btn {
+/* .icon-btn {
     display: none;
-}
+} */
     .profile-title h3{
         font-size: var(--txt-font-mobile);
     }
