@@ -1,0 +1,46 @@
+.login-container{
+        background: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    width: 500px;
+    /* max-width: calc(100vw - 55px); */
+    text-align: center;
+    opacity: 1;
+    transform: translateY(10%);
+    transition: all 0.25s 
+ease-in-out;
+    z-index: 1006;
+}
+
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_modal_input input {
+    /* width: -webkit-fill-available; */
+    padding-inline: 18px;
+    height: 45px;
+    border-radius: var(--input-normal-rounded);
+    border: none;
+    background-color: var(--input-bg);
+    font-size: 15px;
+    outline: none;
+    transition: all 0.55s 
+ease-in-out;
+margin-bottom: 9px;
+}
+
+.k_gap_5{
+    display: flex;
+    gap: 5px;
+}
+
+.login_modal_checkbox_container {
+    margin-block: 25px;
+    display: flex
+;
+    justify-content: space-between;
+}

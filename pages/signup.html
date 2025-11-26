@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#ffff">
+  <title>Document</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <link
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/mobileFooter.css">
+       <link rel="stylesheet" href="../assets/css/home.css">
+            <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/sign.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        #logins{
+                margin-top: -70px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+  <div class="login-page">
+  <div class="login-container" id="logins">
+    <div class="account-icon-container">
+  <svg class="login-icon" width="179" height="202" viewBox="0 0 179 202" xmlns="http://www.w3.org/2000/svg">
+    <path d="M104.428 21.6768L50.1943 30.3029C44.8476 31.1534 41.2029 36.1792 42.0538 41.5285L62.7742 171.8C63.625 177.15 68.6491 180.797 73.9959 179.946L128.229 171.32C133.576 170.47 137.221 165.444 136.37 160.095L115.649 29.8227C114.799 24.4734 109.774 20.8264 104.428 21.6768Z" fill="black"></path>
+    <path d="M104.378 25.5741L95.9356 26.9168L96.0972 27.9329C96.1977 28.5653 96.1728 29.2113 96.0237 29.8341C95.8747 30.4568 95.6045 31.0441 95.2285 31.5623C94.8525 32.0805 94.3781 32.5195 93.8325 32.8542C93.2868 33.1889 92.6806 33.4127 92.0484 33.5129L65.1999 37.7833C64.5678 37.8842 63.922 37.8595 63.2994 37.7106C62.6769 37.5617 62.0897 37.2916 61.5715 36.9156C61.0533 36.5396 60.6142 36.0652 60.2793 35.5194C59.9444 34.9737 59.7202 34.3672 59.6196 33.7348L59.458 32.7188L51.5547 33.9758C50.0045 34.2224 48.6158 35.075 47.6941 36.346C46.7724 37.617 46.3931 39.2023 46.6398 40.7532L67.3429 170.916C67.5895 172.467 68.4419 173.856 69.7125 174.778C70.9831 175.701 72.5677 176.08 74.1179 175.834L126.941 167.432C128.491 167.185 129.88 166.333 130.802 165.062C131.723 163.791 132.102 162.206 131.856 160.655L111.154 30.502C111.033 29.7331 110.762 28.9955 110.356 28.3315C109.95 27.6675 109.417 27.0901 108.787 26.6324C108.158 26.1747 107.444 25.8456 106.688 25.664C105.931 25.4824 105.146 25.4518 104.378 25.5741Z" fill="#8a1344"></path>
+    
+    <!-- Small account icon inside -->
+    <g transform="translate(71, 51) scale(4)">
+      <path fill="#ffff" fill-rule="evenodd" d="M4,2 C5.65685425,2 7,3.34314575 7,5 C7,5.67575081 6.7765771,6.2993184 6.39957171,6.80086239 C7.37120562,7.52882672 8,8.69098363 8,10 L8,14 L0,14 L0,10 C0,8.69098363 0.628794382,7.52882672 1.60081401,6.79909841 C1.2234229,6.2993184 1,5.67575081 1,5 C1,3.34314575 2.34314575,2 4,2 Z"></path>
+    </g>
+  </svg>
+</div>
+
+            
+   
+    <div class="login_modal_title k_flex_col k_gap_15 sign_in_title hide">
+          <h2>Sign In</h2>
+          <p>
+            Don't have an account yet?
+            <span id="swich-to-sign_up-content" onclick="show()">Sign up</span>
+          </p>
+        </div>
+        <div class="login_modal_title k_flex_col k_gap_15 sign_up_title ">
+          <h2>Sign Up</h2>
+          <p>
+            Already have an account?
+            <span id="swich-to-sign_in-content">Log in</span>
+          </p>
+        </div>
+        <div class="login_modal_input k_flex_col k_gap_10">
+          <div class="signup-input-box hide-on-signin " id="signupinput">
+            <input type="text" id="full_name" placeholder="Full Name" />
+             <!-- <input type="text" id="last_name" placeholder="Last Name" /> -->
+          </div>
+          
+          <div class="signup-input-box hide-on-signin ">
+                      <input type="number" id="phone_no" placeholder="Mobile Number" onKeyPress="if(this.value.length==10) return false;"/>
+          </div>
+          
+          <input
+            type="email"
+            id="username"
+            placeholder="Email ID  (optional)"
+          />
+          <div class="login_modal_password_input">
+            <input
+              type="password"
+              id="login_password_input"
+              placeholder="Password"
+            />
+            <div class="k_eye_icon k_flex">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+          </div>
+        </div>
+        <div class="login_modal_checkbox_container k_row hide" id="for_sign_in">
+          <div class="login_modal_checkbox k_flex k_gap_5">
+            <input type="checkbox" />
+            <div class="k_underline_transition_1">
+              <h3>Stay signed in</h3>
+            </div>
+          </div>
+          <div class="k_forget_password_text k_underline_transition_1">
+            <h3>Forgot your password?</h3>
+          </div>
+        </div>
+        <!-- <div class="login_modal_checkbox_container k_row " id="for_sign_up">
+          <div class="login_modal_checkbox k_flex k_gap_5">
+            <input type="checkbox" />
+            <div>
+              <h3>
+                Yes, I agree with <a href="privacy.html">Privacy Policy</a> and
+                Terms of Use
+              </h3>
+            </div>
+          </div>
+        </div> -->
+        <div class="login_btn">
+          <button onclick="signUp(event)" class="k_flex">
+            <p class="btn-submit-text">Sign Up</p>
+          </button>
+        </div>
+  </div>
+  
+</div>
+
+      <!-- jQuery FIRST -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="../assets/js/signup.js"></script>
+ <script src="../assets/js/script.js"></script>
+     <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/home.js"></script>
+    <script src="../assets/js/h_product_quick_view.js"></script>
+    <script src="../assets/js/bd-cart-drawer.js"></script>
+    <script src="../assets/js/ratingPopup.js"></script>
+    <script src="../assets/js/shopping_other.js"></script>
+    <script src="../assets/js/give-star-rating.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <script>
+      
+document.querySelector('#swich-to-sign_in-content').addEventListener("click",  function(){
+// alert("go to login");
+window.location.href='/pages/login.html';
+})
+
+
+    </script>
+</body>
+
+</html>
+
+
+
