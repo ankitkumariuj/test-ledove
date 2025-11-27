@@ -1,164 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#ffff">
-  <title>Document</title>
-  <link
+  <title>Login</title>
+   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
-
-    <link
-      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/css/mobileFooter.css">
-       <link rel="stylesheet" href="../assets/css/home.css">
-            <link rel="stylesheet" href="../assets/css/header.css">
-  <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="../assets/css/sign.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/login.css">
 </head>
-
 <body>
-  <div class="login-page">
-  <div class="login-container">
-    <svg class="login-icon" width="179" height="202" viewBox="0 0 179 202" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M106.55 96.8619L105.488 97.0309C105.174 97.0808 104.959 97.376 105.009 97.6902L107.714 114.692C107.764 115.006 108.059 115.22 108.373 115.17L109.435 115.001C109.749 114.951 109.964 114.656 109.914 114.342L107.209 97.3403C107.159 97.0261 106.864 96.8119 106.55 96.8619Z" fill="white"></path>
-                <path d="M104.428 21.6768L50.1943 30.3029C44.8476 31.1534 41.2029 36.1792 42.0538 41.5285L62.7742 171.8C63.625 177.15 68.6491 180.797 73.9959 179.946L128.229 171.32C133.576 170.47 137.221 165.444 136.37 160.095L115.649 29.8227C114.799 24.4734 109.774 20.8264 104.428 21.6768Z" fill="black"></path>
-                <path d="M104.378 25.5741L95.9356 26.9168L96.0972 27.9329C96.1977 28.5653 96.1728 29.2113 96.0237 29.8341C95.8747 30.4568 95.6045 31.0441 95.2285 31.5623C94.8525 32.0805 94.3781 32.5195 93.8325 32.8542C93.2868 33.1889 92.6806 33.4127 92.0484 33.5129L65.1999 37.7833C64.5678 37.8842 63.922 37.8595 63.2994 37.7106C62.6769 37.5617 62.0897 37.2916 61.5715 36.9156C61.0533 36.5396 60.6142 36.0652 60.2793 35.5194C59.9444 34.9737 59.7202 34.3672 59.6196 33.7348L59.458 32.7188L51.5547 33.9758C50.0045 34.2224 48.6158 35.075 47.6941 36.346C46.7724 37.617 46.3931 39.2023 46.6398 40.7532L67.3429 170.916C67.5895 172.467 68.4419 173.856 69.7125 174.778C70.9831 175.701 72.5677 176.08 74.1179 175.834L126.941 167.432C128.491 167.185 129.88 166.333 130.802 165.062C131.723 163.791 132.102 162.206 131.856 160.655L111.154 30.502C111.033 29.7331 110.762 28.9955 110.356 28.3315C109.95 27.6675 109.417 27.0901 108.787 26.6324C108.158 26.1747 107.444 25.8456 106.688 25.664C105.931 25.4824 105.146 25.4518 104.378 25.5741Z" fill="#8a1344"></path>
-                <g clip-path="url(#clip0_6_12)">
-                    <path d="M102.932 119.254C102.971 119.488 102.915 119.727 102.777 119.92C102.639 120.113 102.431 120.243 102.197 120.282L85.6659 123.03C85.432 123.069 85.1921 123.013 84.9992 122.875C84.8063 122.737 84.6761 122.528 84.6372 122.295L82.9041 111.868C81.5215 111.872 80.1879 111.356 79.169 110.421C78.15 109.487 77.5205 108.203 77.4058 106.825C77.2911 105.447 77.6996 104.076 78.55 102.986C79.4004 101.896 80.6302 101.166 81.9945 100.942L108.158 96.5932L103.96 71.3385L65.1473 77.7898L75.3433 139.132L114.156 132.68L109.963 107.452L101.23 108.904L102.932 119.254Z" fill="white"></path>
-                    <path d="M117.862 96.8387L82.2951 102.75C81.3336 102.91 80.4749 103.445 79.9081 104.238C79.3412 105.031 79.1125 106.017 79.2723 106.978C79.4321 107.94 79.9674 108.799 80.7603 109.366C81.5532 109.932 82.5388 110.161 83.5004 110.001L119.076 104.088C118.604 102.938 118.262 101.739 118.056 100.514C117.858 99.2995 117.793 98.0672 117.862 96.8387Z" fill="black"></path>
-                    <path d="M132.28 82.8571C129.288 83.3588 126.516 84.7496 124.325 86.8485C122.134 88.9475 120.625 91.6574 119.996 94.6255C119.931 94.9445 119.866 95.2635 119.816 95.5619C119.766 95.8603 119.748 96.1896 119.716 96.485C119.609 97.7291 119.659 98.9815 119.864 100.213C120.075 101.441 120.435 102.638 120.937 103.779C121.066 104.065 121.188 104.362 121.331 104.62C121.473 104.877 121.643 105.193 121.812 105.446C123.216 107.806 125.238 109.738 127.659 111.034C130.08 112.33 132.809 112.941 135.551 112.8C138.294 112.659 140.946 111.772 143.222 110.235C145.497 108.698 147.31 106.569 148.465 104.077C149.619 101.585 150.072 98.826 149.774 96.0961C149.475 93.3662 148.438 90.7695 146.772 88.586C145.107 86.4024 142.877 84.7149 140.323 83.7054C137.77 82.6958 134.989 82.4025 132.28 82.8571V82.8571ZM140.292 104.496C138.814 104.738 137.298 104.536 135.935 103.917C134.572 103.298 133.423 102.288 132.633 101.016C131.843 99.7445 131.448 98.2669 131.498 96.7705C131.547 95.2741 132.039 93.826 132.911 92.6091C133.784 91.3921 134.997 90.461 136.398 89.9333C137.799 89.4056 139.325 89.3051 140.784 89.6443C142.242 89.9836 143.567 90.7475 144.591 91.8394C145.616 92.9314 146.293 94.3024 146.539 95.7794C146.701 96.7619 146.668 97.7667 146.442 98.7365C146.216 99.7063 145.801 100.622 145.22 101.431C144.64 102.241 143.906 102.928 143.061 103.454C142.215 103.979 141.274 104.334 140.292 104.496V104.496Z" fill="black"></path>
-                    <path d="M99.404 109.207L84.6992 111.651L86.2681 121.09L100.973 118.646L99.404 109.207Z" fill="black"></path>
-                </g>
-                <defs>
-                    <clipPath id="clip0_6_12">
-                        <rect width="89.421" height="111.776" fill="white" transform="translate(58.5038 65.0884) rotate(-9.43721)"></rect>
-                    </clipPath>
-                </defs>
-            </svg>
-            
-   
-    <div class="login_modal_title k_flex_col k_gap_15 sign_in_title">
-          <h2>Sign In</h2>
-          <p>
-            Don't have an account yet?
-            <span id="swich-to-sign_up-content" onclick="show()">Sign up</span>
-          </p>
-        </div>
-        <div class="login_modal_title k_flex_col k_gap_15 sign_up_title hide">
-          <h2>Sign Up</h2>
-          <p>
-            Already have an account?
-            <span id="swich-to-sign_in-content">Log in</span>
-          </p>
-        </div>
-        <div class="login_modal_input k_flex_col k_gap_10">
-          <div class="signup-input-box hide-on-signin hide" id="signupinput">
-            <input type="text" id="first_name" placeholder="First Name" />
-             <input type="text" id="last_name" placeholder="Last Name" />
-          </div>
-          
-          <div class="signup-input-box hide-on-signin hide">
-                      <input type="number" id="phone_no" placeholder="Your Contact" onKeyPress="if(this.value.length==10) return false;" maxlength="10"/>
-          </div>
-          
-          <input
-            type="text"
-            id="username"
-            placeholder="Phone Number" maxlength="10"
-          />
-          <div class="login_modal_password_input">
-            <input
-              type="password"
-              id="login_password_input"
-              placeholder="Password"
-            />
-            <div class="k_eye_icon k_flex">
+
+  <div class="container">
+
+    <div class="top-shape">
+        <img src="/assets/images/bubble 02.png" alt="">
+        <img src="/assets/images/bubble 01.png" alt="" class="bubble2">
+    </div>
+    <div class="side-shape">
+        <img src="/assets/images/bubblle 03.png" alt="">
+    </div>
+<div class="login">
+    <h1>Login</h1>
+    <p class="subtitle">Good to see you back! <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.6427 0C11.6312 0 11.6159 0 11.6044 0C10.084 0 8.73968 0.804265 7.96605 1.99151C7.19243 0.804265 5.84816 0 4.32771 0C4.31622 0 4.3009 0 4.28941 0C1.91875 0.022979 0 1.94938 0 4.32771C0 5.74475 0.620433 7.75541 1.83066 9.4099C4.13622 12.5619 7.96605 15.3193 7.96605 15.3193C7.96605 15.3193 11.7959 12.5619 14.1014 9.4099C15.3117 7.75541 15.9321 5.74475 15.9321 4.32771C15.9321 1.94938 14.0134 0.022979 11.6427 0Z" fill="black"/>
+</svg>
+</p>
+
+    <div class="input-box">
+      <select id="country-code">
+        <option value="+91">+91</option>
+        <option value="+1">+1</option>
+        <option value="+44">+44</option>
+      </select>
+
+      <input type="number" id="username" placeholder="Phone Number">
+
+    </div>
+
+
+    <div class="input-box">
+      <input type="password" name=""  id="login_password_input" placeholder="Password">
+        <div class="k_eye_icon k_flex">
               <i class="fa-solid fa-eye"></i>
             </div>
-          </div>
-        </div>
-        <!-- <div class="login_modal_checkbox_container k_row" id="for_sign_in">
-          <div class="login_modal_checkbox k_flex k_gap_5">
-            <input type="checkbox" />
-            <div class="k_underline_transition_1">
-              <h3>Stay signed in</h3>
-            </div>
-          </div>
-          <div class="k_forget_password_text k_underline_transition_1">
-            <h3>Forgot your password?</h3>
-          </div>
-        </div>
-        <div class="login_modal_checkbox_container k_row hide" id="for_sign_up">
-          <div class="login_modal_checkbox k_flex k_gap_5">
-            <input type="checkbox" />
-            <div>
-              <h3>
-                Yes, I agree with <a href="privacy.html">Privacy Policy</a> and
-                Terms of Use
-              </h3>
-            </div>
-          </div>
-        </div> -->
-        <div class="login_btn">
-          <button onclick="signin(event)" class="k_flex">
-            <p class="btn-submit-text">Log In</p>
-          </button>
-        </div>
-  </div>
-  
+    </div>
+<div class="action_button">
+    <button class="next-btn" onclick="signin(event)">  <p class="btn-submit-text">Log In</p></button>
+    <button class="cancel-btn">Cancel</button></div>
 </div>
+  </div>
 
-      <!-- jQuery FIRST -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="../assets/js/login.js"></script>
-   <script src="../assets/js/script.js"></script>
-    <!--  <script src="../assets/js/header.js"></script>
+ <script src="../assets/js/script.js"></script>
+     <script src="../assets/js/header.js"></script>
     <script src="../assets/js/api.js"></script>
     <script src="../assets/js/home.js"></script>
     <script src="../assets/js/h_product_quick_view.js"></script>
     <script src="../assets/js/bd-cart-drawer.js"></script>
     <script src="../assets/js/ratingPopup.js"></script>
     <script src="../assets/js/shopping_other.js"></script>
-    <script src="../assets/js/give-star-rating.js"></script> -->
+    <script src="../assets/js/give-star-rating.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
-
-    <script>
-      
-document.querySelector('#swich-to-sign_up-content').addEventListener("click",  function(){
-// alert("go to login");
-window.location.href='/pages/signup.html';
-})
-
-
-    </script>
 </body>
-
 </html>
-
-
-

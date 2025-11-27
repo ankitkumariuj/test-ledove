@@ -52,6 +52,7 @@ const renderBestSellerProducts = (data) => {
 
       productHtml += `
           
+
             <div class="product_card1" >
  <img src="${image_url + "/product/main/" + item.main_image}" alt="" onclick="window.location.href='singleproduct.html?pid=${item.id}'">
   <div class="product_info1">
@@ -83,6 +84,8 @@ const renderBestSellerProducts = (data) => {
     </div>
   </div>
 </div>
+
+
           `;
     });
 
@@ -284,50 +287,41 @@ function filterBySubcategory(subId, catId, showContainer) {
 
           productHtml += `
           
-          <div class="product">
-            <a class="product-img" href="singleproduct.html?pid=${
-              item.id
-            }" onclick="saveProductName('${item.name}')"><img src="${
-            image_url + "/product/main/" + item.main_image
-          }" alt=""></a>
-            <div class="product_info">
-            <div class="discount-label">${Math.round(((item.mrp - item.selling_price) / item.mrp) * 100)}%</div>
-            <p>${item.name}</p>
-            <h2>${item.description}</h2>
-           
-            <div class="price-container">
-            <div class="price">
-                <span class="old-price">₹${item.mrp}</span>
-                <span class="new-price">₹${item.selling_price}</span>
-                </div>
-                 <div class="icon-with-label ${isWishlist}" onclick="addToWishlist(${
-            item.id
-          })">
-                    <span class="icon-label">${iconLabel}</span>
-                    <i class="fas fa-heart" style="box-shadow: unset  "></i>
-                </div>
-            </div>
+            <div class="product">
 
+            <a class="product-img" href="singleproduct.html?pid=${item.id}" onclick="saveProductName('${item.name}')">
+              <img src="${image_url + "/product/main/" + item.main_image}" alt="">
+            </a>
+              <div class="product_info">
+
+              <p>${item.name}</p>
+           
+              
+              <div class="price-container">
+              <div class="price">
+              <span class="new-pricebpcs">₹${parseInt(item.selling_price)}/Pcs</span>
+              </div>
+              <span class="old-pricepcs">MRP ₹${parseInt(item.mrp)} | MOQ: ${item.stock}Pcs</span>
+              <div class="discount-label">${Math.round(((item.mrp - item.selling_price) / item.mrp) * 100)}% Margin
+  </div>
+               <!-- Heart Icon with Label -->
+               
+                </div>
 
             <div class="icon-container">
                 <!-- Eye Icon with Label -->
-                <div class="icon-with-label" onclick="openQuickView(${
-                  item.id
-                })">
-                    <span class="icon-label">View Product</span>
-                    <i class="fas fa-eye"></i>
+                <div class="icon-with-label" ${isWishlist}" onclick="addToWishlist(${item.id})">
+                    <span class="icon-label">${iconLabel}</span>
+                    <i class="fas fa-heart" ></i>
                 </div>
 
-                <!-- Heart Icon with Label -->
-               
+             
             </div>
 
+ <button class="add-to-cart" onclick="addToCartProcess(${
+                              item.id
+                            })"> <i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>         </div> </div>`;
 
-            
-       <button class="add-to-cart" onclick="addToCartProcess(${ item.id })"> <i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-</div>
-        </div>
-          `;
         });
 
         $(`#${showContainer}`).html(productHtml);
@@ -359,52 +353,42 @@ const topProductsByCategory = (cat_id, showContainer) => {
       }
 
       productHtml += `
-            
-            <div class="product">
-              <a class="product-img" href="singleproduct.html?pid=${
-                item.id
-              }" onclick="saveProductName('${item.name}')"><img src="${
-        image_url + "/product/main/" + item.main_image
-      }" alt=""></a>
-        <div class="product_info">
-              <div class="discount-label">${Math.round(((item.mrp - item.selling_price) / item.mrp) * 100)}%
-</div>
+              <div class="product">
+
+            <a class="product-img" href="singleproduct.html?pid=${item.id}" onclick="saveProductName('${item.name}')">
+              <img src="${image_url + "/product/main/" + item.main_image}" alt="">
+            </a>
+              <div class="product_info">
+
               <p>${item.name}</p>
-              <h2>${item.description}</h2>
-             
+           
+              
               <div class="price-container">
               <div class="price">
-                  <span class="old-price">₹${item.mrp}</span>
-                  <span class="new-price">₹${item.selling_price}</span>
+              <span class="new-pricebpcs">₹${parseInt(item.selling_price)}/Pcs</span>
               </div>
-                  <!-- Heart Icon with Label -->
-                  <div class="icon-with-label ${isWishlist}" onclick="addToWishlist(${
-        item.id
-      })">
-                      <span class="icon-label">${iconLabel}</span>
-                      <i class="fas fa-heart" style="box-shadow: unset"></i>
-                  </div>
-                     </div>
-  
-  
-              <div class="icon-container">
-                  <!-- Eye Icon with Label -->
-                  <div class="icon-with-label" onclick="openQuickView(${
-                    item.id
-                  })">
-                      <span class="icon-label">View Product</span>
-                      <i class="fas fa-eye"></i>
-                  </div>
-  
-              
-              </div>
-  
-  
-             
-              <button class="add-to-cart" onclick="addToCartProcess(${ item.id })"> <i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+              <span class="old-pricepcs">MRP ₹${parseInt(item.mrp)} | MOQ: ${item.stock}Pcs</span>
+              <div class="discount-label">${Math.round(((item.mrp - item.selling_price) / item.mrp) * 100)}% Margin
   </div>
-          </div>
-            `;
+               <!-- Heart Icon with Label -->
+               
+                </div>
+
+            <div class="icon-container">
+                <!-- Eye Icon with Label -->
+                <div class="icon-with-label" ${isWishlist}" onclick="addToWishlist(${item.id})">
+                    <span class="icon-label">${iconLabel}</span>
+                    <i class="fas fa-heart" ></i>
+                </div>
+
+             
+            </div>
+
+ <button class="add-to-cart" onclick="addToCartProcess(${
+                              item.id
+                            })"> <i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>         </div> </div>`;
+
+            
     });
 
     $(`#${showContainer}`).html(productHtml);
@@ -447,11 +431,16 @@ const fetchprodaccordtotittle = () => {
           }
 
           html += `          
-           <div class="product">
+
+          
+
+          <div class="product">
+
             <a class="product-img" href="singleproduct.html?pid=${item.id}" onclick="saveProductName('${item.name}')">
               <img src="${image_url + "/product/main/" + item.main_image}" alt="">
             </a>
               <div class="product_info">
+
               <p>${item.name}</p>
            
               
@@ -479,6 +468,8 @@ const fetchprodaccordtotittle = () => {
  <button class="add-to-cart" onclick="addToCartProcess(${
                               item.id
                             })"> <i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>         </div> </div>`;
+
+
         });
 
         // Render products
@@ -531,6 +522,7 @@ const Productfetchaccodtotiitles2 = () => {
               <img src="${image_url + "/product/main/" + item.main_image}" alt="">
             </a>
               <div class="product_info">
+
               <p>${item.name}</p>
            
               
@@ -558,6 +550,8 @@ const Productfetchaccodtotiitles2 = () => {
  <button class="add-to-cart" onclick="addToCartProcess(${
                               item.id
                             })"> <i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>         </div> </div>`;
+
+           
         });
 
         // Render products
@@ -605,11 +599,12 @@ const fetchnothreeprodsaccordtotittle = () => {
           }
 
           html += `          
-          <div class="product">
+           <div class="product">
             <a class="product-img" href="singleproduct.html?pid=${item.id}" onclick="saveProductName('${item.name}')">
               <img src="${image_url + "/product/main/" + item.main_image}" alt="">
             </a>
               <div class="product_info">
+
               <p>${item.name}</p>
            
               
@@ -637,6 +632,7 @@ const fetchnothreeprodsaccordtotittle = () => {
  <button class="add-to-cart" onclick="addToCartProcess(${
                               item.id
                             })"> <i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>         </div> </div>`;
+
         });
 
         // Render products

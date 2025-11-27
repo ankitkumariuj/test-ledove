@@ -256,7 +256,11 @@ $(document).ready(() => {
 
 
 const flitercat = async () => {
+
   const topfetchCategories = $(".budget_section");
+
+  // const topfetchCategories = $(".filter");
+
 
 
   $.ajax({
@@ -277,10 +281,13 @@ const flitercat = async () => {
 
         categories.forEach((item) => {
           categoryItemHtml += `
+
             <a href="category.html?cat_id=${item.id}" class="budget_box">
 <img src=${image_url + item.image_url} alt="">
   <div class="image_overlay"></div>
   <p><span id="sp">Under</span> ₹499 <span id="sp">Dresses</span> </p>
+
+          
             </a>
           `;
         });
@@ -341,7 +348,11 @@ const fetchTodayBestDeal = () => {
         // ✅ HTML structure
         productHtml += `
           <div class="product">
+
             <a class="product-img" href="singleproduct.html?pid=${item.id}">
+
+            <a class="product-img" href="singleproduct.html?pid=${item.id}" onclick="saveProductName('${item.name}')">
+
               <img src="${image_url}product/main/${item.main_image}" alt="${item.name}">
             </a>
 
@@ -909,19 +920,22 @@ async function GetSubCategory(subId) {
       const categoryCount = index + 1; 
 
       output += `
-      <div class="Category-box">
+      <div class="Category-box" onlick="window.location.href='category.html?subCat_id=${item.id}&cate_id=${item.category_id}"'>
       
-            <a href="category.html?subCat_id=${item.id}&cate_id=${item.category_id}">
             <h1 id='count'>${categoryCount}</h1> 
+            
+
+
             <div class="images">
         <img src="${scatei}${item.image_url}" width="80"  class="p_img"/>
         <div class="image_overlay"></div>
-        <b class="cate_name">${item.name}</b>
-        <img src="../assets/images/Rectangle.png" class=label-img2 />
-        <p class="offer_label_text">MIN 70% OFF</p>
-        
-        </a>
+        <b class="cate_name">${item.name}</b> 
+         <img src="../assets/images/Rectangle.png" class=label-img2 />
+       <p class="offer_label_text">MIN 70% OFF</p>
         </div>
+        
+        
+     
         </div>
       `;
     });
@@ -931,7 +945,8 @@ async function GetSubCategory(subId) {
 
   // ⚠️ Note: If you have multiple elements with id='count' on your page, 
   // they should technically use a class instead, as 'id' must be unique.
-  // However, within the generated HTML string, it serves its purpose.
+  // However, within the generated HTML string, it serves its purpose. <img src="../assets/images/Rectangle.png" class=label-img2 />
+   //     <p class="offer_label_text">MIN 70% OFF</p>
   document.getElementById("PrintSubCate").innerHTML = output;
 }
 
@@ -1000,6 +1015,7 @@ function fetchRecentlyViewedProducts() {
         let iconLabel = item.is_wishlisted == 1 ? "Remove From Wishlist" : "Add To Wishlist";
 
         html += `
+
             <div class="product_card1">
  <img src="${image_url + "/product/main/" + item.main_image}" alt="">
   <div class="product_info1">
@@ -1029,6 +1045,8 @@ function fetchRecentlyViewedProducts() {
 </div>
 
 
+
+         
         `;
       });
 
@@ -1143,4 +1161,260 @@ color: white;
   });
 }
 
+
+
+
+
+    function banners() {
+  const banner_products = $('#banner_products');
+
+  $.ajax({
+    url: API_URL,
+    type: "POST",
+    data: { type: "loadBanner" },
+
+    success: function (response) {
+      console.log(response[10].image_url);
+
+      if (response && response[10]) {
+        let html = "";
+
+        html += `
+          <img src="${image_url}/banner/${response[10].image_url}" alt="Banner Image" height= '100%' width='100%' />
+          <button><a href="../pages/category.html"> Shop now </a></button>
+        `;
+
+        banner_products.html(html);
+      } else {
+        console.log("Banner not found!");
+      }
+    }
+  });
+}
+
+
+function loadProductsByCategorys( cat_id) {
+  console.log("Loading category:",  cat_id);
+  const products= $('.product-boxs');
+
+  $.ajax({
+    url: API_URL,
+    type: "POST",
+    data: { type: "loadProductsByCategory",  cat_id: '1', },
+    success: function (response) {
+      console.log("Category Products:", response);
+let html = "";
+        response.map((item) => {
+          html+= `
+                <div class = "products">
+                <a class="product-img" href="singleproduct.html?pid=${item.id}"onclick="saveProductName('${item.name}')" >
+              <img src="${image_url + "/product/main/" + item.main_image}" alt="" class="img">
+               <img src="../assets/images/Rectangle.png" class='label-img'>
+                         <p style="     position: absolute;
+    top: 0px;
+    margin-left: 15px;
+    width: 22px;
+        font-weight: 700;
+    font-size: 10px;
+    color: white;
+
+    text-align: center;">${Math.round(((item.mrp - item.selling_price) / item.mrp) * 100)} OFF</p>
+            </a>
+            <p class="p-name">${item.name}</p>
+           
+            </div>
+          `;
+        })
+        products.html(html);
+        
+    }
+       
+  });
+}
+
+
+
+
+function bannerkids() {
+  const banner_kids = $('#banner_kids');
+
+  $.ajax({
+    url: API_URL,
+    type: "POST",
+    data: { type: "loadBanner" },
+
+    success: function (response) {
+      console.log(response[13].image_url);
+
+      if (response && response[13]) {
+        let html = "";
+
+        html += `
+          <img src="${image_url}/banner/${response[13].image_url}" alt="Banner Image" height= '100%' width='100%'  class="img"/>
+           
+          <button><a href="../pages/category.html"> Shop now </a></button>
+        `;
+
+        banner_kids.html(html);
+      } else {
+        console.log("Banner not found!");
+      }
+    }
+  });
+}
+
+
+function loadProductsByCategorykids( cat_id) {
+  console.log("Loading category:",  cat_id);
+  const productskids= $('.product-kids');
+
+  $.ajax({
+    url: API_URL,
+    type: "POST",
+    data: { type: "loadProductsByCategory",  cat_id: '4', },
+    success: function (response) {
+      console.log("Category Products:", response);
+let html = "";
+        response.map((item) => {
+          html+= `
+                <div class = "products">
+                <a class="product-img" href="singleproduct.html?pid=${item.id}"onclick="saveProductName('${item.name}')" >
+              <img src="${image_url + "/product/main/" + item.main_image}" alt="" class="img">
+              <img src="../assets/images/Rectangle.png" class='label-img'>
+                <p style="     position: absolute;
+    top: 0px;
+    margin-left: 15px;
+    width: 22px;
+    color: white;
+        font-weight: 700;
+    font-size: 10px;
+
+    text-align: center;">${Math.round(((item.mrp - item.selling_price) / item.mrp) * 100)} OFF</p>
+              </a>
+           <p class="p-name">${item.name}</p>
+            </div>
+          `;
+        })
+        productskids.html(html);
+    }
+
+       
+  });
+}
+
+const fetchProductRating = () => {
+  $.ajax({
+    url: API_URL,
+    method: "POST",
+    data: { type: "fetchProductRating", pid: "all" },
+
+    success: function (ratingResponse) {
+      console.log("Rating Response:", ratingResponse);
+
+      // Extract ONLY product IDs
+      let productIDs = ratingResponse
+        .map(item => item.product_id)
+        .filter(id => id); // remove null/undefined
+
+      // Remove duplicates
+      productIDs = [...new Set(productIDs)];
+
+      console.log("Clean Product IDs:", productIDs);
+
+      // Second API call to get product details
+      $.ajax({
+        url: API_URL,
+        method: "POST",
+        data: {
+          type: "getProductsByIds",
+          ids: JSON.stringify(productIDs),
+        },
+
+        success: function (productResponse) {
+          console.log("Product Details:", productResponse);
+
+          // Some APIs return data in productResponse.data, some return direct array
+          let products = productResponse.data || productResponse;
+
+          let html = "";
+
+          products.forEach((item) => {
+            let discount = ((item.mrp - item.selling_price) / item.mrp) * 100;
+            let isWishlist = item.is_wishlisted == 1 ? "active" : "";
+            let iconLabel =
+              item.is_wishlisted == 1
+                ? "Remove From Wishlist"
+                : "Add To Wishlist";
+
+            html += `
+              <div class="product">
+                <a class="product-img" href="singleproduct.html?pid=${item.id}">
+                  <img src="${image_url}/product/main/${item.main_image}" alt="">
+                </a>
+
+                <div class="toprated">
+                <svg class="svg-stars" data-index="1" width="15" height="15" viewBox="0 0 32 30" fill="gold" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 0.5L20.2321 10.6751L31.2169 11.5557L22.8476 18.7249L25.4046 29.4443L16 23.7L6.59544 29.4443L9.15239 18.7249L0.783095 11.5557L11.7679 10.6751L16 0.5Z"></path>
+            </svg>
+                  Top Rated
+                </div>
+
+                <div class="product_info">
+                  <div class="discount-label">${Math.round(discount)}%</div>
+                  <p>${item.name}</p>
+                  <h2>${item.description}</h2>
+
+                   <div class="price-container">
+              <div class="price">
+                <span class="old-price">₹${item.mrp}</span>
+                <span class="new-price">₹${item.selling_price}</span>
+                </div>
+                <div class="icon-with-label ${isWishlist}" onclick="addToWishlist(${item.id})">
+                  <span class="icon-label">${iconLabel}</span>
+                  <i class="fas fa-heart" style="    box-shadow: none;"></i>
+                </div>
+              </div>
+
+              <div class="icon-container">
+                <!-- Eye Icon -->
+                <div class="icon-with-label" onclick="openQuickView(${item.id})">
+                  <span class="icon-label">View Product</span>
+                  <i class="fas fa-eye"></i>
+                </div>
+
+                <!-- Heart Icon -->
+               
+              </div>
+
+                  <button class="add-to-cart" onclick="addToCartProcess(${item.id})">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            `;
+          });
+
+          $("#topratedproduct").html(html);
+        },
+
+        error: function () {
+          console.error("Error fetching product details");
+        }
+      });
+    },
+
+    error: function () {
+      console.error("Error fetching ratings");
+    }
+  });
+};
+
+fetchProductRating();
+
+
+
+
+// $('#count').forEach{
+// i++
+// }
 

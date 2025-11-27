@@ -24,8 +24,10 @@ if (login_status) {
 
 
 function openModal() {
+
   if (login_status) {
     location.href = "profile.html";
+    // alert('hh')
     return;
   }
   else{
