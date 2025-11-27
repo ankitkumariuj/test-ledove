@@ -33,9 +33,9 @@
     .discount-container {
         display: flex;
 
-        background: url('../assets/images/white.png');
+        background: url('../images/white.png');
 
-        background: url('../assets/images/white\ bg.png');
+        /* background: url('../assets/images/white\ bg.png'); */
 
         padding: 15px 30px;
         border-radius: 8px;
