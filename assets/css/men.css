@@ -322,7 +322,7 @@
 
     /* banner mid02 */
     .banner_mid02 {
-        background: url('../assets/images/blue bg.png');
+        background: url('../images/blue bg.png');
         padding: 5%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -331,7 +331,7 @@
     }
 
     .banner_mid03 {
-        background: url('../assets/images/banner\ mid2\ bg.png');
+        background: url('../images/banner\ mid2\ bg.png');
         padding: 5%;
         background-size: cover;
         background-repeat: no-repeat;
