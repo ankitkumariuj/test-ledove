@@ -84,6 +84,10 @@ const signUp = (event) => {
       return;
     }
 
+    if(username.trim() === ""){
+      warningAlert('Please Enter your email id');
+      return;
+    }
    
 
       if (password.trim() === "") {
@@ -122,7 +126,25 @@ const signUp = (event) => {
   console.log("Button text was:", btn_text);
 };
 
+const togglePassword = document.getElementById("eye");
+const password = document.getElementById("login_password_input");
+const btn = document.getElementById("btn_signup");
 
 
+togglePassword.style.display = "none";
+
+password.addEventListener("input", () => {
+  if (password.value.length > 0) {
+    togglePassword.style.display = "block"; 
+             btn.style.background='black';      
+  } else {
+    togglePassword.style.display = "none";    
+                            btn.style.background=  '#e6e6e6';     
+  }
+});
 
 
+if (password.value.length === 0) {
+  togglePassword.style.display = "none";
+
+}
